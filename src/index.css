@@ -8,7 +8,6 @@
 @import "./styles/badges.css";
 @import "./styles/indicators.css";
 @import "./styles/menus.css";
-@import "./styles/popovers.css";
 @import "./styles/avatars.css";
 @import "./styles/sliders.css";
 @import "./styles/cards.css";
@@ -23,8 +22,8 @@
 @import "./styles/components/show-more.css";
 @import "./styles/components/accordion.css";
 @import "./styles/components/context-menu.css";
+@import "./styles/components/popover.css";
 @import "./styles/components/drawer.css";
-@import "./styles/components/dropdown.css";
 @import "./styles/components/modal.css";
 @import "./styles/components/otp.css";
 @import "./styles/components/progress.css";

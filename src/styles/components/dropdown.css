@@ -1,7 +1,0 @@
-@utility dropdown {
-  @apply relative w-max max-w-full;
-}
-
-@utility dropdown-menu {
-  @apply absolute w-max z-10;
-}
