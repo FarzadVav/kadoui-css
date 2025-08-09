@@ -17,56 +17,56 @@
   @apply popover-body;
   /* Extend */
 
-  @apply pb-1.5 top-out left-center origin-bottom;
+  @apply top-out left-center;
 }
 
 @utility popover-body-tr {
   @apply popover-body;
   /* Extend */
 
-  @apply top-out right-out origin-bottom-left;
+  @apply top-out right-out;
 }
 
 @utility popover-body-r {
   @apply popover-body;
   /* Extend */
 
-  @apply pl-1.5 top-center right-out origin-left;
+  @apply top-center right-out;
 }
 
 @utility popover-body-br {
   @apply popover-body;
   /* Extend */
 
-  @apply bottom-out right-out origin-top-left;
+  @apply bottom-out right-out;
 }
 
 @utility popover-body-b {
   @apply popover-body;
   /* Extend */
 
-  @apply pt-1.5 bottom-out left-center origin-top;
+  @apply bottom-out left-center;
 }
 
 @utility popover-body-bl {
   @apply popover-body;
   /* Extend */
 
-  @apply bottom-out left-out origin-top-right;
+  @apply bottom-out left-out;
 }
 
 @utility popover-body-l {
   @apply popover-body;
   /* Extend */
 
-  @apply pr-1.5 top-center left-out origin-right;
+  @apply top-center left-out;
 }
 
 @utility popover-body-tl {
   @apply popover-body;
   /* Extend */
 
-  @apply top-out left-out origin-bottom-right;
+  @apply left-out;
 }
 
 /* --- */
