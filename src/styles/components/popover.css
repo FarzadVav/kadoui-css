@@ -7,78 +7,64 @@
 }
 
 @utility popover-body {
-  --popover-body-size: calc(var(--spacing) * 3);
-  --popover-body-text: var(--text-base);
-  --popover-body-line: var(--tw-leading, var(--text-base--line-height));
-
-  @apply absolute w-max bg-palette text-brush rounded-kado transition-all z-10;
-
-  padding: var(--popover-body-size);
-  font-size: var(--popover-body-text);
-  line-height: var(--popover-body-line);
+  @apply absolute w-max rounded-kado transition-all z-10 not-[.popover-body-active]:ignore;
 }
 
-/* --- */
-
-/* Sizes */
-@utility popover-body-sm {
-  --popover-body-size: calc(var(--spacing) * 1.5);
-  --popover-body-text: var(--text-sm);
-  --popover-body-line: var(--tw-leading, var(--text-sm--line-height));
-}
-
-@utility popover-body-lg {
-  --popover-body-size: calc(var(--spacing) * 6);
-  --popover-body-text: var(--text-lg);
-  --popover-body-line: var(--tw-leading, var(--text-lg--line-height));
-}
 /* --- */
 
 /* Positions */
 @utility popover-body-t {
-  @apply popover-body; /* Extend */
+  @apply popover-body;
+  /* Extend */
 
   @apply pb-1.5 top-out left-center origin-bottom;
 }
 
 @utility popover-body-tr {
-  @apply popover-body; /* Extend */
+  @apply popover-body;
+  /* Extend */
 
   @apply top-out right-out origin-bottom-left;
 }
 
 @utility popover-body-r {
-  @apply popover-body; /* Extend */
+  @apply popover-body;
+  /* Extend */
 
   @apply pl-1.5 top-center right-out origin-left;
 }
 
 @utility popover-body-br {
-  @apply popover-body; /* Extend */
+  @apply popover-body;
+  /* Extend */
 
   @apply bottom-out right-out origin-top-left;
 }
 
 @utility popover-body-b {
-  @apply popover-body; /* Extend */
+  @apply popover-body;
+  /* Extend */
 
   @apply pt-1.5 bottom-out left-center origin-top;
 }
 
 @utility popover-body-bl {
-  @apply popover-body; /* Extend */
+  @apply popover-body;
+  /* Extend */
 
   @apply bottom-out left-out origin-top-right;
 }
 
 @utility popover-body-l {
-  @apply popover-body; /* Extend */
+  @apply popover-body;
+  /* Extend */
 
   @apply pr-1.5 top-center left-out origin-right;
 }
 
 @utility popover-body-tl {
-  @apply popover-body; /* Extend */
+  @apply popover-body;
+  /* Extend */
 
   @apply top-out left-out origin-bottom-right;
 }
