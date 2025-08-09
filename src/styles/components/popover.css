@@ -7,7 +7,7 @@
 }
 
 @utility popover-body {
-  @apply absolute w-max rounded-kado transition-all z-10;
+  @apply absolute w-max rounded-kado z-10;
 }
 
 /* --- */
