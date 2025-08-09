@@ -1,0 +1,15 @@
+@utility modal-portal {
+  @apply fixed inset-0 z-50 f-center bg-foreground/10;
+}
+
+@utility modal-body {
+  @apply w-max max-w-[90%] h-full max-h-[90%];
+}
+
+@utility modal-header {
+  @apply h-16 f-align px-3 bg-background rounded-t-2xl border-b border-separator sticky top-0;
+}
+
+@utility modal-content {
+  @apply py-3 px-3 bg-background rounded-b-2xl max-h-[calc(100%-4rem)] overflow-y-auto;
+}

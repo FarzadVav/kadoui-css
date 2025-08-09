@@ -1,0 +1,23 @@
+@utility alert {
+  --alert-h: calc(var(--spacing) * 9);
+  --alert-text: var(--text-base);
+  --alert-line: var(--tw-leading, var(--text-base--line-height));
+
+  @apply f-align gap-3 p-3 rounded-kado w-full bg-palette/10 text-palette border border-palette;
+
+  min-height: var(--alert-h);
+  font-size: var(--alert-text);
+  line-height: var(--alert-line);
+}
+
+@utility alert-sm {
+  --alert-h: calc(var(--spacing) * 8);
+  --alert-text: var(--text-sm);
+  --alert-line: var(--tw-leading, var(--text-sm--line-height));
+}
+
+@utility alert-lg {
+  --alert-h: calc(var(--spacing) * 10);
+  --alert-text: var(--text-lg);
+  --alert-line: var(--tw-leading, var(--text-lg--line-height));
+}

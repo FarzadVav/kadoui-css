@@ -1,0 +1,15 @@
+@utility highlight {
+  @apply px-1.5 bg-palette/10 text-palette rounded font-bold;
+}
+
+@utility skeleton {
+  @apply bg-palette/10 rounded-kado animate-pulse;
+}
+
+@utility ignore {
+  @apply opacity-0 pointer-events-none;
+}
+
+@utility no-ignore {
+  @apply opacity-100 pointer-events-auto;
+}

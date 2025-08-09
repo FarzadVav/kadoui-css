@@ -1,0 +1,3 @@
+@utility context-menu-content {
+  @apply z-10 fixed transition-all not-[.context-menu-active]:ignore;
+}

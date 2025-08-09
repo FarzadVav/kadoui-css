@@ -1,0 +1,3 @@
+@utility show-more-fade {
+  @apply absolute inset-0 bg-gradient-to-t from-background from-35% to-transparent;
+}

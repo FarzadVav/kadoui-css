@@ -1,0 +1,36 @@
+@utility table-container {
+  @apply relative overflow-x-auto shadow rounded-kado;
+}
+
+@utility table-main {
+  @apply w-full *:text-left;
+}
+
+@utility table-main-caption {
+  @apply p-6 bg-foreground/10 border-b border-separator;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-lg mb-1.5;
+  }
+}
+
+@utility table-main-head {
+  @apply bg-foreground/10;
+
+  th {
+    @apply px-6 py-3;
+  }
+}
+
+@utility table-main-row {
+  @apply bg-background not-last:border-b border-separator;
+
+  td {
+    @apply px-6 py-3;
+  }
+}

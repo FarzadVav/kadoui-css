@@ -1,0 +1,39 @@
+@layer base {
+  html {
+    @apply scroll-smooth bg-background text-foreground;
+  }
+
+  * {
+    @apply select-none;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--color-foreground-1)) transparent;
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  a,
+  span,
+  label {
+    @apply inline-block;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @apply !leading-relaxed;
+  }
+
+  textarea {
+    @apply resize-none;
+  }
+}

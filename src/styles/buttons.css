@@ -1,0 +1,73 @@
+/* Button */
+@utility btn {
+  --btn-w: auto;
+  --btn-h: calc(var(--spacing) * 9);
+  --btn-px: calc(var(--spacing) * 3);
+  --btn-text: var(--text-base);
+  --btn-line: var(--tw-leading, var(--text-base--line-height));
+
+  @apply gap-1.5 rounded-kado f-center transition-all outline-solid outline-2 outline-transparent focus-visible:outline-palette
+  disabled:opacity-50 disabled:cursor-not-allowed;
+
+  width: var(--btn-w);
+  height: var(--btn-h);
+  padding: 0 var(--btn-px);
+  font-size: var(--btn-text);
+  line-height: var(--btn-line);
+
+  &:where(.menu-y &) {
+    @apply !w-full !justify-start;
+  }
+}
+/* --- */
+
+/* Sizes */
+@utility btn-sm {
+  --btn-h: calc(var(--spacing) * 8);
+  --btn-text: var(--text-sm);
+  --btn-line: var(--tw-leading, var(--text-sm--line-height));
+}
+
+@utility btn-lg {
+  --btn-h: calc(var(--spacing) * 10);
+  --btn-text: var(--text-lg);
+  --btn-line: var(--tw-leading, var(--text-lg--line-height));
+}
+
+@utility btn-square {
+  --btn-w: var(--btn-h);
+  --btn-px: 0;
+}
+/* --- */
+
+/* Variants */
+@utility btn-fill {
+  @apply btn; /* Extend */
+
+  @apply bg-palette text-brush outline-offset-2 not-active:hover:bg-palette/90;
+}
+
+@utility btn-outline {
+  @apply btn; /* Extend */
+
+  @apply border border-palette text-palette outline-offset-2 not-active:hover:bg-palette/10;
+}
+
+@utility btn-soft {
+  @apply btn; /* Extend */
+
+  @apply bg-palette/10 text-palette not-active:hover:bg-palette/20;
+}
+
+@utility btn-ghost {
+  @apply btn; /* Extend */
+
+  @apply text-palette not-active:hover:bg-palette/10;
+}
+/* --- */
+
+/* Utils */
+@utility btn-link {
+  @apply underline decoration-transparent decoration-0 hover:decoration-palette;
+}
+/* --- */

@@ -1,0 +1,32 @@
+/* Kbds */
+@utility kbd {
+  --kbd-p: calc(var(--spacing) * 1.5);
+  --kbd-text: var(--text-sm);
+  --kbd-line: var(--tw-leading, var(--text-sm--line-height));
+
+  @apply p-[var(--kbd-p)]
+  rounded bg-palette/10 text-palette backdrop-blur-sm active:translate-y-0.5 transition-all duration-75;
+
+  font-size: var(--kbd-text);
+  line-height: var(--kbd-line);
+  box-shadow: 0 2px 0 1px var(--color-palette);
+
+  &:active {
+    box-shadow: 0 1px 0 1px var(--color-palette);
+  }
+}
+/* --- */
+
+/* Sizes */
+@utility kbd-sm {
+  --kbd-p: calc(var(--spacing) * 0.5);
+  --kbd-text: var(--text-xs);
+  --kbd-line: var(--tw-leading, var(--text-xs--line-height));
+}
+
+@utility kbd-lg {
+  --kbd-p: calc(var(--spacing) * 3);
+  --kbd-text: var(--text-base);
+  --kbd-line: var(--tw-leading, var(--text-base--line-height));
+}
+/* --- */

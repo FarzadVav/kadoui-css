@@ -1,0 +1,162 @@
+/* Layouts */
+@utility container {
+  @apply max-w-5xl px-3 mx-auto;
+}
+
+/* --- */
+
+/* Scroll bars */
+@utility no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* --- */
+
+/* Flex boxex */
+@utility f-align {
+  @apply flex items-center;
+}
+
+@utility f-align-scroll {
+  @apply flex overflow-x-auto pb-1.5;
+
+  &.no-scrollbar {
+    @apply pb-0;
+  }
+}
+
+@utility f-center {
+  @apply f-align justify-center;
+}
+
+/* --- */
+
+/* Joins */
+@utility join {
+  @apply f-align ltr:*:not-first:rounded-l-none ltr:*:not-last:rounded-r-none rtl:*:not-first:rounded-r-none rtl:*:not-last:rounded-l-none;
+}
+
+@utility join-border {
+  @apply join;
+  /* Extend */
+
+  @apply ltr:*:not-first:border-l rtl:*:not-first:border-r *:border-brush;
+}
+
+/* --- */
+
+/*
+  Center positions
+  Element should be `absolute` or `fixed`
+*/
+@utility top-center {
+  @apply top-1/2 -translate-y-1/2;
+}
+
+@utility top-boundary {
+  @apply top-0 -translate-y-1/2;
+}
+
+@utility top-out {
+  @apply top-0 -translate-y-full;
+}
+
+@utility right-center {
+  @apply right-1/2 translate-x-1/2;
+}
+
+@utility right-boundary {
+  @apply right-0 translate-x-1/2;
+}
+
+@utility right-out {
+  @apply right-0 translate-x-full;
+}
+
+@utility bottom-center {
+  @apply bottom-1/2 translate-y-1/2;
+}
+
+@utility bottom-boundary {
+  @apply bottom-0 translate-y-1/2;
+}
+
+@utility bottom-out {
+  @apply bottom-0 translate-y-full;
+}
+
+@utility left-center {
+  @apply left-1/2 -translate-x-1/2;
+}
+
+@utility left-boundary {
+  @apply left-0 -translate-x-1/2;
+}
+
+@utility left-out {
+  @apply left-0 -translate-x-full;
+}
+
+@utility inset-center {
+  @apply top-center left-center;
+}
+
+/* --- */
+
+@utility border-separator {
+  @apply border-foreground/10;
+}
+
+/* Separators */
+@utility separate-t {
+  @apply pt-6 mt-6 border-t border-separator;
+}
+
+@utility separate-r {
+  @apply pr-3 mr-3 border-r border-separator;
+}
+
+@utility separate-b {
+  @apply pb-6 mb-6 border-b border-separator;
+}
+
+@utility separate-l {
+  @apply pl-3 ml-3 border-l border-separator;
+}
+
+@utility separate-y {
+  @apply py-6 my-6 border-y border-separator;
+}
+
+@utility separate-x {
+  @apply px-3 mx-3 border-x border-separator;
+}
+
+/* --- */
+
+/* Icon sizes */
+@utility compatible-icon {
+  @apply h-1/2 aspect-square;
+}
+
+@utility icon-size-1 {
+  @apply size-3 min-w-3;
+}
+
+@utility icon-size-2 {
+  @apply size-4 min-w-4;
+}
+
+@utility icon-size-3 {
+  @apply size-5 min-w-5;
+}
+
+@utility icon-size-4 {
+  @apply size-6 min-w-6;
+}
+
+@utility icon-size-5 {
+  @apply size-7 min-w-7;
+}
+
+/* --- */

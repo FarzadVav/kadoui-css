@@ -1,0 +1,77 @@
+/*
+  Input
+  This element should be <label>
+*/
+@utility input {
+  --input-h: calc(var(--spacing) * 9);
+  --input-w: auto;
+  --input-px: calc(var(--spacing) * 3);
+  --input-text: var(--text-base);
+  --input-line: var(--tw-leading, var(--text-base--line-height));
+
+  @apply flex rounded-kado gap-3 cursor-pointer relative transition-all outline-solid outline-2 outline-transparent focus-within:outline-palette
+  disabled:opacity-50 disabled:cursor-not-allowed;
+
+  width: var(--input-w);
+  height: var(--input-h);
+  font-size: var(--input-text);
+  line-height: var(--input-line);
+
+  &:has(input, select) {
+    @apply items-center;
+
+    padding: 0 var(--input-px);
+  }
+
+  &:has(textarea) {
+    @apply h-[33dvh] p-[var(--input-px)];
+  }
+}
+
+/* Sizes */
+@utility input-lg {
+  --input-h: calc(var(--spacing) * 10);
+  --input-text: var(--text-lg);
+  --input-line: var(--tw-leading, var(--text-lg--line-height));
+}
+
+@utility input-sm {
+  --input-h: calc(var(--spacing) * 8);
+  --input-text: var(--text-sm);
+  --input-line: var(--tw-leading, var(--text-sm--line-height));
+}
+
+@utility input-square {
+  --input-w: var(--input-h);
+  --input-px: 0;
+}
+/* --- */
+
+/* Field */
+@utility input-field {
+  @apply bg-transparent flex-1 h-full max-w-full;
+
+  &:where(select) {
+    @apply cursor-pointer;
+  }
+}
+/* --- */
+
+/* Variants */
+@utility input-outline {
+  @apply input; /* Extend */
+
+  @apply border text-palette border-palette outline-offset-2;
+}
+
+@utility input-soft {
+  @apply input; /* Extend */
+
+  @apply text-palette bg-palette/10;
+}
+
+@utility input-ghost {
+  @apply input; /* Extend */
+
+  @apply text-palette hover:bg-palette/10 focus-within:bg-palette/10;
+}

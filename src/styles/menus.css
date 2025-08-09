@@ -1,0 +1,33 @@
+/* Menu */
+@utility menu {
+  --menu-size: calc(var(--spacing) * 3);
+
+  @apply p-[var(--menu-size)]
+  bg-background-thick backdrop-blur-sm rounded-kado w-fit;
+}
+/* --- */
+
+/* Sizes */
+@utility menu-sm {
+  --menu-size: calc(var(--spacing) * 1.5);
+}
+
+@utility menu-lg {
+  --menu-size: calc(var(--spacing) * 6);
+}
+/* --- */
+
+/* Directions */
+@utility menu-y {
+  @apply menu; /* Extend */
+
+  @apply space-y-[var(--menu-size)];
+}
+
+@utility menu-x {
+  @apply menu; /* Extend */
+
+  @apply gap-x-[var(--menu-size)]
+  f-align;
+}
+/* --- */

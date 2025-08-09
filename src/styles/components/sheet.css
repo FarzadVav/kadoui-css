@@ -1,0 +1,15 @@
+@utility sheet-portal {
+  @apply fixed inset-0 z-50 bg-foreground/10;
+}
+
+@utility sheet-body {
+  @apply absolute bottom-0 h-[75%] w-full overflow-hidden bg-background;
+}
+
+@utility sheet-header {
+  @apply h-12 f-center border-b border-separator cursor-grab active:cursor-grabbing;
+}
+
+@utility sheet-content {
+  @apply overflow-y-auto h-[calc(100%-3rem)] p-3;
+}

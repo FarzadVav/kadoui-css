@@ -1,0 +1,7 @@
+@utility progress {
+  @apply w-full rounded-kado overflow-hidden h-6 bg-palette/10;
+}
+
+@utility progress-bar {
+  @apply f-center h-full bg-palette text-brush max-w-full;
+}

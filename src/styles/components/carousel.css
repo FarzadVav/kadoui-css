@@ -1,0 +1,15 @@
+@utility carousel {
+  @apply relative;
+}
+
+@utility carousel-container {
+  @apply f-align-scroll;
+}
+
+@utility carousel-left-fade {
+  @apply pointer-events-none absolute right-0 top-0 h-full w-1/6 bg-gradient-to-l from-background from-5% to-transparent z-10 transition-opacity;
+}
+
+@utility carousel-right-fade {
+  @apply pointer-events-none absolute left-0 top-0 h-full w-1/6 bg-gradient-to-r from-background from-5% to-transparent z-10 transition-opacity;
+}

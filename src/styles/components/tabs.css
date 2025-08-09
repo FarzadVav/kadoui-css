@@ -1,0 +1,7 @@
+@utility tabs-list {
+  @apply join-border;
+}
+
+@utility tabs-panel {
+  @apply p-3 rounded-kado bg-foreground/10 mt-1.5;
+}

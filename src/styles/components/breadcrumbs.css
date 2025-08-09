@@ -1,0 +1,7 @@
+@utility breadcrumbs {
+  @apply f-align flex-wrap gap-x-3 gap-y-1.5;
+}
+
+@utility breadcrumbs-item {
+  @apply f-align gap-1.5;
+}

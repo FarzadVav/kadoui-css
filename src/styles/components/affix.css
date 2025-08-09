@@ -1,0 +1,51 @@
+@utility affix {
+  @apply fixed transition-all z-40 not-[.affix-active]:ignore;
+}
+
+@utility affix-tl {
+  @apply affix;
+
+  @apply top-3 left-3;
+}
+
+@utility affix-t {
+  @apply affix;
+
+  @apply top-3 left-center;
+}
+
+@utility affix-tr {
+  @apply affix;
+
+  @apply top-3 right-3;
+}
+
+@utility affix-r {
+  @apply affix;
+
+  @apply top-center right-3;
+}
+
+@utility affix-br {
+  @apply affix;
+
+  @apply bottom-3 right-3;
+}
+
+@utility affix-b {
+  @apply affix;
+
+  @apply bottom-3 left-center;
+}
+
+@utility affix-bl {
+  @apply affix;
+
+  @apply bottom-3 left-3;
+}
+
+@utility affix-l {
+  @apply affix;
+
+  @apply top-center left-3;
+}

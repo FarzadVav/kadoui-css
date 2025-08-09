@@ -1,0 +1,15 @@
+@utility spoiler {
+  @apply transition-all;
+
+  &:not(*:is(.spoiler-active)) {
+    @apply inline cursor-pointer rounded overflow-hidden px-1;
+  }
+}
+
+@utility spoiler-blur {
+  @apply transition-all;
+
+  &:not(*:is(.spoiler-active)) {
+    @apply select-none blur-[3px];
+  }
+}
