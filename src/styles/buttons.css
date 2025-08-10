@@ -23,13 +23,13 @@
 
 /* Sizes */
 @utility btn-sm {
-  --btn-h: calc(var(--spacing) * 8);
+  --btn-h: calc(var(--spacing) * 7);
   --btn-text: var(--text-sm);
   --btn-line: var(--tw-leading, var(--text-sm--line-height));
 }
 
 @utility btn-lg {
-  --btn-h: calc(var(--spacing) * 10);
+  --btn-h: calc(var(--spacing) * 11);
   --btn-text: var(--text-lg);
   --btn-line: var(--tw-leading, var(--text-lg--line-height));
 }
