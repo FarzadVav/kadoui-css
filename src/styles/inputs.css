@@ -60,22 +60,27 @@
 
 /* Variants */
 @utility input-outline {
-  @apply input;
-  /* Extend */
+  @apply input; /* Extend */
 
   @apply border text-palette border-palette outline-offset-2;
 }
 
 @utility input-soft {
-  @apply input;
-  /* Extend */
+  @apply input; /* Extend */
 
   @apply text-palette bg-palette/10;
 }
 
 @utility input-ghost {
-  @apply input;
-  /* Extend */
+  @apply input; /* Extend */
 
   @apply text-palette hover:bg-palette/10 focus-within:bg-palette/10;
 }
+/* --- */
+
+/* Utils */
+@utility input-icon-size {
+  width: calc(var(--input-h) / 2);
+  height: calc(var(--input-h) / 2);
+}
+/* --- */

@@ -135,10 +135,6 @@
 /* --- */
 
 /* Icon sizes */
-@utility compatible-icon {
-  @apply h-1/2 aspect-square;
-}
-
 @utility icon-size-1 {
   @apply size-3 min-w-3;
 }
@@ -158,5 +154,4 @@
 @utility icon-size-5 {
   @apply size-7 min-w-7;
 }
-
 /* --- */
