@@ -56,6 +56,7 @@
 /* Utils */
 @utility badge-icon-size {
   width: calc(var(--badge-h) / 2);
+  min-width: calc(var(--badge-h) / 2);
   height: calc(var(--badge-h) / 2);
 }
 /* --- */

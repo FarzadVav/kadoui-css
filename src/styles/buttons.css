@@ -43,37 +43,44 @@
 
 /* Variants */
 @utility btn-fill {
-  @apply btn; /* Extend */
+  @apply btn;
+  /* Extend */
 
   @apply bg-palette text-brush outline-offset-2 not-active:hover:bg-palette/90;
 }
 
 @utility btn-outline {
-  @apply btn; /* Extend */
+  @apply btn;
+  /* Extend */
 
   @apply border border-palette text-palette outline-offset-2 not-active:hover:bg-palette/10;
 }
 
 @utility btn-soft {
-  @apply btn; /* Extend */
+  @apply btn;
+  /* Extend */
 
   @apply bg-palette/10 text-palette not-active:hover:bg-palette/20;
 }
 
 @utility btn-ghost {
-  @apply btn; /* Extend */
+  @apply btn;
+  /* Extend */
 
   @apply text-palette not-active:hover:bg-palette/10;
 }
+
 /* --- */
 
 /* Utils */
 @utility btn-icon-size {
   width: calc(var(--btn-h) / 2);
+  min-width: calc(var(--btn-h) / 2);
   height: calc(var(--btn-h) / 2);
 }
 
 @utility btn-link {
   @apply underline decoration-transparent decoration-0 hover:decoration-palette;
 }
+
 /* --- */

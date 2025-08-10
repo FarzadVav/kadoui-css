@@ -45,6 +45,9 @@
   --input-px: 0;
 }
 
+@utility input-for-btn {
+  --input-px: calc(var(--spacing) * 1);
+}
 /* --- */
 
 /* Field */
@@ -85,7 +88,7 @@
 /* Utils */
 @utility input-icon-size {
   width: calc(var(--input-h) / 2);
+  min-width: calc(var(--input-h) / 2);
   height: calc(var(--input-h) / 2);
 }
-
 /* --- */
