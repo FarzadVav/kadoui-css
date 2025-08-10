@@ -1,31 +1,54 @@
 /* Badge */
 @utility badge {
-  --badge-h: 1.5rem;
-  /* 6 in tailwind */
-  --badge-text: 0.875rem;
-  /* sm in tailwind */
+  --badge-h: calc(var(--spacing) * 6);
+  --badge-text: var(--text-sm);
+  --badge-line: var(--tw-leading, var(--text-sm--line-height));
 
-  @apply f-center gap-0.5 px-1.5 rounded-child w-fit max-w-full bg-palette text-brush;
+  @apply f-center gap-0.75 px-1.5 rounded-child w-max max-w-full;
 
   height: var(--badge-h);
   font-size: var(--badge-text);
+  line-height: var(--badge-line);
 }
-
 /* --- */
 
 /* Sizes */
 @utility badge-sm {
-  --badge-h: 1.25rem;
-  /* 5 in tailwind */
-  --badge-text: 0.75rem;
-  /* xs in tailwind */
+  --badge-h: calc(var(--spacing) * 5);
+  --badge-text: var(--text-xs);
+  --badge-line: var(--tw-leading, var(--text-xs--line-height));
 }
 
 @utility badge-lg {
-  --badge-h: 1.75rem;
-  /* 7 in tailwind */
-  --badge-text: 1rem;
-  /* base in tailwind */
+  --badge-h: calc(var(--spacing) * 7);
+  --badge-text: var(--text-base);
+  --badge-line: var(--tw-leading, var(--text-base--line-height));
 }
 
+/* --- */
+
+/* Variants */
+@utility badge-fill {
+  @apply badge; /* Extend */
+
+  @apply bg-palette text-brush;
+}
+
+@utility badge-outline {
+  @apply badge; /* Extend */
+
+  @apply border border-palette text-palette;
+}
+
+@utility badge-soft {
+  @apply badge; /* Extend */
+
+  @apply bg-palette/10 text-palette;
+}
+
+@utility badge-ghost {
+  @apply badge; /* Extend */
+
+  @apply text-palette;
+}
 /* --- */

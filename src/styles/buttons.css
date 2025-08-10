@@ -15,7 +15,7 @@
   line-height: var(--btn-line);
 
   &:where(.menu-y &) {
-    @apply !w-full !justify-start;
+    @apply w-full !justify-start;
   }
 }
 
@@ -43,33 +43,28 @@
 
 /* Variants */
 @utility btn-fill {
-  @apply btn;
-  /* Extend */
+  @apply btn; /* Extend */
 
   @apply bg-palette text-brush outline-offset-2 not-active:hover:bg-palette/90;
 }
 
 @utility btn-outline {
-  @apply btn;
-  /* Extend */
+  @apply btn; /* Extend */
 
   @apply border border-palette text-palette outline-offset-2 not-active:hover:bg-palette/10;
 }
 
 @utility btn-soft {
-  @apply btn;
-  /* Extend */
+  @apply btn; /* Extend */
 
   @apply bg-palette/10 text-palette not-active:hover:bg-palette/20;
 }
 
 @utility btn-ghost {
-  @apply btn;
-  /* Extend */
+  @apply btn; /* Extend */
 
   @apply text-palette not-active:hover:bg-palette/10;
 }
-
 /* --- */
 
 /* Utils */
