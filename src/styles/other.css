@@ -3,7 +3,7 @@
 }
 
 @utility skeleton {
-  @apply bg-palette/10 rounded-kado animate-pulse;
+  @apply bg-background-thin rounded-kado animate-pulse;
 }
 
 @utility ignore {

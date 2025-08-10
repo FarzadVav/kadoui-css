@@ -104,7 +104,7 @@
 /* --- */
 
 @utility border-separator {
-  @apply border-foreground/10;
+  @apply border-background-thin;
 }
 
 /* Separators */

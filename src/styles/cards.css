@@ -2,8 +2,9 @@
 @utility card {
   --card-p: calc(var(--spacing) * 3);
 
-  @apply bg-palette text-brush p-[var(--card-p)] rounded-kado hover:bg-palette/90;
+  @apply bg-background-thick text-brush p-[var(--card-p)] rounded-kado;
 }
+
 /* --- */
 
 /* Sizes */
