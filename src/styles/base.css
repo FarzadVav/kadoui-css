@@ -23,16 +23,6 @@
     @apply cursor-pointer;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    @apply !leading-relaxed;
-  }
-
   textarea {
     @apply resize-none;
   }
