@@ -1,5 +1,5 @@
 @utility table-container {
-  @apply relative overflow-x-auto shadow rounded-kado;
+  @apply relative overflow-x-auto shadow rounded-child;
 }
 
 @utility table-main {

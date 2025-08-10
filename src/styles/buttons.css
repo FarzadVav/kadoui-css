@@ -6,8 +6,7 @@
   --btn-text: var(--text-base);
   --btn-line: var(--tw-leading, var(--text-base--line-height));
 
-  @apply gap-1.5 rounded-kado f-center transition-all outline-solid outline-2 outline-transparent focus-visible:outline-palette
-  disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply gap-1.5 rounded-child f-center transition-all outline-solid outline-2 outline-transparent focus-visible:outline-palette disabled:opacity-50 disabled:cursor-not-allowed;
 
   width: var(--btn-w);
   height: var(--btn-h);
@@ -19,6 +18,7 @@
     @apply !w-full !justify-start;
   }
 }
+
 /* --- */
 
 /* Sizes */
@@ -38,36 +38,43 @@
   --btn-w: var(--btn-h);
   --btn-px: 0;
 }
+
 /* --- */
 
 /* Variants */
 @utility btn-fill {
-  @apply btn; /* Extend */
+  @apply btn;
+  /* Extend */
 
   @apply bg-palette text-brush outline-offset-2 not-active:hover:bg-palette/90;
 }
 
 @utility btn-outline {
-  @apply btn; /* Extend */
+  @apply btn;
+  /* Extend */
 
   @apply border border-palette text-palette outline-offset-2 not-active:hover:bg-palette/10;
 }
 
 @utility btn-soft {
-  @apply btn; /* Extend */
+  @apply btn;
+  /* Extend */
 
   @apply bg-palette/10 text-palette not-active:hover:bg-palette/20;
 }
 
 @utility btn-ghost {
-  @apply btn; /* Extend */
+  @apply btn;
+  /* Extend */
 
   @apply text-palette not-active:hover:bg-palette/10;
 }
+
 /* --- */
 
 /* Utils */
 @utility btn-link {
   @apply underline decoration-transparent decoration-0 hover:decoration-palette;
 }
+
 /* --- */

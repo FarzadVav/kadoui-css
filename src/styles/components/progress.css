@@ -1,5 +1,5 @@
 @utility progress {
-  @apply w-full rounded-kado overflow-hidden h-6 bg-palette/10;
+  @apply w-full rounded-child overflow-hidden h-6 bg-palette/10;
 }
 
 @utility progress-bar {

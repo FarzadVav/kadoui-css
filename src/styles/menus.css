@@ -2,9 +2,9 @@
 @utility menu {
   --menu-size: calc(var(--spacing) * 3);
 
-  @apply p-[var(--menu-size)]
-  bg-background-thick backdrop-blur-sm rounded-kado w-fit;
+  @apply p-[var(--menu-size)] bg-background-thick backdrop-blur-sm rounded-child w-fit;
 }
+
 /* --- */
 
 /* Sizes */
@@ -15,19 +15,22 @@
 @utility menu-lg {
   --menu-size: calc(var(--spacing) * 6);
 }
+
 /* --- */
 
 /* Directions */
 @utility menu-y {
-  @apply menu; /* Extend */
+  @apply menu;
+  /* Extend */
 
   @apply space-y-[var(--menu-size)];
 }
 
 @utility menu-x {
-  @apply menu; /* Extend */
+  @apply menu;
+  /* Extend */
 
-  @apply gap-x-[var(--menu-size)]
-  f-align;
+  @apply gap-x-[var(--menu-size)] f-align;
 }
+
 /* --- */

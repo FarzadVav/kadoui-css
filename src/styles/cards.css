@@ -1,10 +1,13 @@
 /* card */
 @utility card {
+  --card-background: var(--color-background);
   --card-p: calc(var(--spacing) * 3);
 
-  @apply bg-background-thick text-brush p-[var(--card-p)] rounded-kado;
-}
+  @apply rounded-parent;
 
+  background-color: var(--card-background);
+  padding: var(--card-p);
+}
 /* --- */
 
 /* Sizes */
@@ -19,3 +22,14 @@
 @utility card-pure {
   --card-p: 0;
 }
+/* --- */
+
+/* Colors */
+@utility card-thin {
+  --card-background: var(--color-background-thin);
+}
+
+@utility card-thick {
+  --card-background: var(--color-background-thick);
+}
+/* --- */

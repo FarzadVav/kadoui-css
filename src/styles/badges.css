@@ -1,23 +1,31 @@
 /* Badge */
 @utility badge {
-  --badge-h: 1.5rem; /* 6 in tailwind */
-  --badge-text: 0.875rem; /* sm in tailwind */
+  --badge-h: 1.5rem;
+  /* 6 in tailwind */
+  --badge-text: 0.875rem;
+  /* sm in tailwind */
 
-  @apply f-center gap-0.5 px-1.5 rounded-kado w-fit max-w-full bg-palette text-brush;
+  @apply f-center gap-0.5 px-1.5 rounded-child w-fit max-w-full bg-palette text-brush;
 
   height: var(--badge-h);
   font-size: var(--badge-text);
 }
+
 /* --- */
 
 /* Sizes */
 @utility badge-sm {
-  --badge-h: 1.25rem; /* 5 in tailwind */
-  --badge-text: 0.75rem; /* xs in tailwind */
+  --badge-h: 1.25rem;
+  /* 5 in tailwind */
+  --badge-text: 0.75rem;
+  /* xs in tailwind */
 }
 
 @utility badge-lg {
-  --badge-h: 1.75rem; /* 7 in tailwind */
-  --badge-text: 1rem; /* base in tailwind */
+  --badge-h: 1.75rem;
+  /* 7 in tailwind */
+  --badge-text: 1rem;
+  /* base in tailwind */
 }
+
 /* --- */

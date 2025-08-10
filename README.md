@@ -15,7 +15,8 @@
   --color-palette: var(--color-foreground);
   --color-brush: var(--color-background);
 
-  --radius-kado: 0.375rem;
+  --radius-child: 0.5rem; /* lg in tailwind */
+  --radius-parent: 0.75rem; /* xl in tailwind */
 }
 
 [data-theme="dark"] {
@@ -70,7 +71,7 @@ We also recommend that you develop the ui of your projects with this system:
   Border radius:
     lvl-1: rounded
     lvl-2: rounded-md
-    lvl-3: rounded-kado
+    lvl-3: rounded-lg
     lvl-4: rounded-xl
     lvl-5: rounded-2xl
 

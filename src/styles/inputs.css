@@ -9,8 +9,7 @@
   --input-text: var(--text-base);
   --input-line: var(--tw-leading, var(--text-base--line-height));
 
-  @apply flex rounded-kado gap-3 cursor-pointer relative transition-all outline-solid outline-2 outline-transparent focus-within:outline-palette
-  disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply flex rounded-child gap-3 cursor-pointer relative transition-all outline-solid outline-2 outline-transparent focus-within:outline-palette disabled:opacity-50 disabled:cursor-not-allowed;
 
   width: var(--input-w);
   height: var(--input-h);
@@ -45,6 +44,7 @@
   --input-w: var(--input-h);
   --input-px: 0;
 }
+
 /* --- */
 
 /* Field */
@@ -55,23 +55,27 @@
     @apply cursor-pointer;
   }
 }
+
 /* --- */
 
 /* Variants */
 @utility input-outline {
-  @apply input; /* Extend */
+  @apply input;
+  /* Extend */
 
   @apply border text-palette border-palette outline-offset-2;
 }
 
 @utility input-soft {
-  @apply input; /* Extend */
+  @apply input;
+  /* Extend */
 
   @apply text-palette bg-palette/10;
 }
 
 @utility input-ghost {
-  @apply input; /* Extend */
+  @apply input;
+  /* Extend */
 
   @apply text-palette hover:bg-palette/10 focus-within:bg-palette/10;
 }
