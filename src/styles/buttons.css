@@ -22,6 +22,12 @@
 /* --- */
 
 /* Sizes */
+@utility btn-for-input {
+  --btn-h: calc(var(--spacing) * 6);
+  --btn-text: var(--text-xs);
+  --btn-line: var(--tw-leading, var(--text-xs--line-height));
+}
+
 @utility btn-sm {
   --btn-h: calc(var(--spacing) * 7);
   --btn-text: var(--text-sm);
