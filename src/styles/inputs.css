@@ -46,7 +46,7 @@
 }
 
 @utility input-for-btn {
-  --input-px: calc(var(--spacing) * 1.5);
+  --input-px: calc(var(--spacing) * 1);
 }
 /* --- */
 

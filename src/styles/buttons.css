@@ -23,7 +23,7 @@
 
 /* Sizes */
 @utility btn-for-input {
-  --btn-h: calc(var(--input-h) - 3);
+  --btn-h: calc(var(--spacing) * (var(--input-h) - 2));
 }
 
 @utility btn-sm {
