@@ -37,12 +37,16 @@
 }
 
 @utility join-border {
-  @apply join;
-  /* Extend */
+  @apply join; /* Extend */
 
   @apply ltr:*:not-first:border-l rtl:*:not-first:border-r *:border-brush;
 }
 
+@utility join-no-inner-border {
+  @apply join; /* Extend */
+
+  @apply ltr:*:not-last:border-r-0 rtl:*:not-last:border-l-0;
+}
 /* --- */
 
 /*
@@ -154,4 +158,5 @@
 @utility icon-size-5 {
   @apply size-7 min-w-7;
 }
+
 /* --- */

@@ -44,10 +44,6 @@
   --input-w: var(--input-h);
   --input-px: 0;
 }
-
-@utility input-for-btn {
-  --input-px: calc(var(--spacing) * 1);
-}
 /* --- */
 
 /* Field */
