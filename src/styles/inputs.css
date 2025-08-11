@@ -48,7 +48,7 @@
 
 /* Field */
 @utility input-field {
-  @apply bg-transparent flex-1 not-[type: file]:h-full max-w-full;
+  @apply bg-transparent flex-1 not-[type:file]:h-full max-w-full;
 
   &:where(select) {
     @apply cursor-pointer;
