@@ -14,10 +14,7 @@
   width: var(--input-w);
   font-size: var(--input-text);
   line-height: var(--input-line);
-
-  &:not(*:is(type:file)) {
-    height: var(--input-h);
-  }
+  height: var(--input-h);
 
   &:has(input, select) {
     @apply items-center;
@@ -51,7 +48,7 @@
 
 /* Field */
 @utility input-field {
-  @apply bg-transparent flex-1 h-full max-w-full;
+  @apply bg-transparent flex-1 not-[type: file]:h-full max-w-full;
 
   &:where(select) {
     @apply cursor-pointer;
