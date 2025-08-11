@@ -3,7 +3,7 @@
 }
 
 @utility modal-body {
-  @apply w-max max-w-[90%] h-full max-h-[90%];
+  @apply w-max max-w-[90%] h-full max-h-[90%] f-center;
 }
 
 @utility modal-header {
