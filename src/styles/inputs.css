@@ -12,9 +12,12 @@
   @apply flex rounded-child gap-3 cursor-pointer relative transition-all outline-solid outline-2 outline-transparent focus-within:outline-palette disabled:opacity-50 disabled:cursor-not-allowed;
 
   width: var(--input-w);
-  height: var(--input-h);
   font-size: var(--input-text);
   line-height: var(--input-line);
+
+  &:not(*:is(type:file)) {
+    height: var(--input-h);
+  }
 
   &:has(input, select) {
     @apply items-center;
