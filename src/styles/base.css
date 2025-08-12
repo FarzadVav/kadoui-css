@@ -5,9 +5,13 @@
 
   * {
     @apply select-none;
-
+    
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--color-foreground)) transparent;
+
+    &:focus {
+      @apply outline-none;
+    }
   }
 
   a,
