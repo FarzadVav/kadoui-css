@@ -45,12 +45,6 @@
 
   @apply bg-palette/10 text-palette;
 }
-
-@utility badge-ghost {
-  @apply badge; /* Extend */
-
-  @apply text-palette;
-}
 /* --- */
 
 /* Utils */
