@@ -13,10 +13,6 @@
   padding: 0 var(--btn-px);
   font-size: var(--btn-text);
   line-height: var(--btn-line);
-
-  &:where(.menu-y &) {
-    @apply w-full !justify-start;
-  }
 }
 
 /* --- */
