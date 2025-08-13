@@ -3,7 +3,7 @@
 }
 
 @utility sheet-body {
-  @apply absolute bottom-0 h-[75%] w-full overflow-hidden bg-background flex flex-col touch-none;
+  @apply absolute bottom-0 h-[75%] flex flex-col overflow-hidden bg-background touch-none;
 }
 
 @utility sheet-header {
@@ -11,5 +11,5 @@
 }
 
 @utility sheet-content {
-  @apply overflow-y-auto p-3 flex-1;
+  @apply overflow-y-auto flex-1 p-3;
 }
