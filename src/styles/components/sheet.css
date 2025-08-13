@@ -7,7 +7,7 @@
 }
 
 @utility sheet-header {
-  @apply h-12 f-center border-b border-separator cursor-grab active:cursor-grabbing;
+  @apply h-12 f-center border-b border-separator cursor-grab touch-none active:cursor-grabbing;
 }
 
 @utility sheet-content {
