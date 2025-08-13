@@ -7,7 +7,7 @@
 }
 
 @utility sheet-header {
-  @apply p1.5 f-center;
+  @apply p-3 f-center;
 }
 
 @utility sheet-handlebar {
