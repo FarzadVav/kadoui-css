@@ -3,11 +3,11 @@
 }
 
 @utility sheet-body {
-  @apply absolute bottom-0 h-[75%] w-full overflow-hidden bg-background;
+  @apply absolute bottom-0 h-[75%] w-full overflow-hidden bg-background touch-none;
 }
 
 @utility sheet-header {
-  @apply h-12 f-center border-b border-separator cursor-grab touch-none active:cursor-grabbing;
+  @apply h-12 f-center border-b border-separator cursor-grab active:cursor-grabbing;
 }
 
 @utility sheet-content {
