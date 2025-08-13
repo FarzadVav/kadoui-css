@@ -7,7 +7,11 @@
 }
 
 @utility sheet-header {
-  @apply h-12 f-center border-b border-separator cursor-grab active:cursor-grabbing;
+  @apply p1.5 f-center;
+}
+
+@utility sheet-handlebar {
+  @apply w-1/4 h-1 rounded-full bg-background-thin;
 }
 
 @utility sheet-content {
