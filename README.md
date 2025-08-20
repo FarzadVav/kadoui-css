@@ -1,4 +1,5 @@
 # Add follow codes to your main CSS file
+
 ```css
 @import "tailwindcss";
 @import "@kadoui/css";
@@ -9,14 +10,11 @@
   --color-background: #fafafa;
   --color-background-thick: #efefef;
   --color-foreground: #151515;
-  --color-beautifulRed: #9F0000;
+  --color-beautifulRed: #9f0000;
   /* You can add any colors */
 
   --color-palette: var(--color-foreground);
   --color-brush: var(--color-background);
-
-  --radius-child: 0.5rem; /* lg in tailwind */
-  --radius-parent: 0.75rem; /* xl in tailwind */
 }
 
 [data-theme="dark"] {
@@ -46,43 +44,44 @@
 ---
 
 We also recommend that you develop the ui of your projects with this system:
+
 ```
-  Spacing:
+  Spacing (`Recommendation`):
     lvl-1: 0.5
     lvl-2: 1.5
     lvl-3: 3
     lvl-4: 6
     lvl-5: 9
 
-  Color shades:
+  Color shades (`Recommendation`):
     lvl-1: 100%
     lvl-2: 90%
     lvl-3: 50%
     lvl-4: 20%
     lvl-5: 10%
 
-  Z-index layers:
+  Z-index layers (`Recommendation, No more is needed`):
     lvl-1: 10
     lvl-2: 20
     lvl-3: 30
     lvl-4: 40
     lvl-5: 50
 
-  Border radius:
+  Border radius (`You can customize the TailwindCSS theme config`):
     lvl-1: rounded
     lvl-2: rounded-md
     lvl-3: rounded-lg
     lvl-4: rounded-xl
     lvl-5: rounded-2xl
 
-  Heading:
+  Heading (`You can customize the TailwindCSS theme config`):
     lvl-1: text-base
     lvl-2: text-lg
     lvl-3: text-xl
     lvl-4: text-2xl
     lvl-5: text-3xl
 
-  Paragraph:
+  Paragraph (`You can customize the TailwindCSS theme config`):
     lvl-1: text-xs
     lvl-2: text-sm
     lvl-3: text-base

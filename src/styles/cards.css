@@ -3,7 +3,7 @@
   --card-background: var(--color-background);
   --card-p: calc(var(--spacing) * 3);
 
-  @apply rounded-parent;
+  @apply rounded-xl;
 
   background-color: var(--card-background);
   padding: var(--card-p);

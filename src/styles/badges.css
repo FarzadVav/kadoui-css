@@ -4,7 +4,7 @@
   --badge-text: var(--text-sm);
   --badge-line: var(--tw-leading, var(--text-sm--line-height));
 
-  @apply f-center gap-0.75 px-1.5 rounded-child w-max max-w-full;
+  @apply f-center gap-0.75 px-1.5 rounded-lg w-max max-w-full;
 
   height: var(--badge-h);
   font-size: var(--badge-text);

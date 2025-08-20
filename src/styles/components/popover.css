@@ -7,7 +7,7 @@
 }
 
 @utility popover-body {
-  @apply absolute w-max rounded-child z-10;
+  @apply absolute w-max rounded-lg z-10;
 }
 
 /* --- */

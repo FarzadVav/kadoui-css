@@ -3,5 +3,5 @@
 }
 
 @utility tabs-panel {
-  @apply p-3 rounded-child bg-background-thick mt-1.5;
+  @apply p-3 rounded-lg bg-background-thick mt-1.5;
 }

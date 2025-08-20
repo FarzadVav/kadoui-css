@@ -2,7 +2,7 @@
 @utility menu {
   --menu-size: calc(var(--spacing) * 3);
 
-  @apply bg-background-thick backdrop-blur-sm rounded-child w-max;
+  @apply bg-background-thick backdrop-blur-sm rounded-lg w-max;
 
   padding: var(--menu-size);
 }

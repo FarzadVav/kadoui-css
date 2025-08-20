@@ -3,7 +3,7 @@
   --alert-text: var(--text-base);
   --alert-line: var(--tw-leading, var(--text-base--line-height));
 
-  @apply f-align gap-3 p-3 rounded-child w-full bg-palette/10 text-palette border border-palette;
+  @apply f-align gap-3 p-3 rounded-lg w-full bg-palette/10 text-palette border border-palette;
 
   min-height: var(--alert-h);
   font-size: var(--alert-text);
