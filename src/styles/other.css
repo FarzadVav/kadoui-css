@@ -13,3 +13,7 @@
 @utility not-ignore {
   @apply opacity-100 visible pointer-events-auto;
 }
+
+@utility slider {
+  @apply bg-palette rounded-full appearance-none cursor-grab active:cursor-grabbing;
+}
