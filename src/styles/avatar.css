@@ -1,13 +1,12 @@
-/* Avatar */
 @utility avatar {
   --avatar-size: calc(var(--spacing) * 12);
 
-  @apply size-[var(--avatar-size)]
-  rounded-full shadow;
-}
-/* --- */
+  @apply rounded-full shadow;
 
-/* Sizes */
+  width: clamp(var(--avatar-size), var(--avatar-size), var(--avatar-size));
+  height: clamp(var(--avatar-size), var(--avatar-size), var(--avatar-size));
+}
+
 @utility avatar-sm {
   --avatar-size: calc(var(--spacing) * 9);
 }
@@ -15,4 +14,3 @@
 @utility avatar-lg {
   --avatar-size: calc(var(--spacing) * 16);
 }
-/* --- */
