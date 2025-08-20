@@ -1,10 +1,13 @@
-# Add follow codes to your main CSS file
+# Add the following code to your main CSS file
 
 ```css
 @import "tailwindcss";
 @import "@kadoui/css";
 
 @theme {
+  --font-*: initial;
+  --font-beautifulFont: var(--font-beautifulFont);
+
   --color-*: initial;
   --color-background-thin: #ffffff;
   --color-background: #fafafa;
@@ -51,11 +54,17 @@
   --color-palette: var(--color-beautifulRed);
   --color-brush: var(--color-background);
 }
+
+@layer base {
+  html {
+    @apply font-beautifulFont;
+  }
+}
 ```
 
 ---
 
-We also recommend that you develop the ui of your projects with this system:
+### We recommend that you develop the UI of your app with this system
 
 ```
   Spacing (`Recommendation`):
@@ -99,4 +108,20 @@ We also recommend that you develop the ui of your projects with this system:
     lvl-3: text-base
     lvl-4: text-lg
     lvl-5: text-xl
+```
+
+---
+
+### Also, please add the `heading` and `title` classes of your app
+
+```css
+/* These are examples */
+
+@utility heading {
+  @apply text-2xl lg:text-5xl font-black;
+}
+
+@utility title {
+  @apply text-lg lg:text-xl font-bold;
+}
 ```
