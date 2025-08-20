@@ -1,0 +1,41 @@
+@utility menu {
+  --menu-background: var(--color-background);
+  --menu-p: calc(var(--spacing) * 3);
+  --menu-radius: var(--radius-lg);
+
+  @apply w-max;
+
+  background-color: var(--menu-background);
+  padding: var(--menu-p);
+  border-radius: var(--menu-radius);
+}
+
+@utility menu-sm {
+  --menu-p: calc(var(--spacing) * 1.5);
+  --menu-radius: var(--radius-md);
+}
+
+@utility menu-lg {
+  --menu-p: calc(var(--spacing) * 6);
+  --menu-radius: var(--radius-xl);
+}
+
+@utility menu-y {
+  @apply flex flex-col;
+
+  row-gap: var(--menu-p);
+}
+
+@utility menu-x {
+  @apply f-align;
+
+  column-gap: var(--menu-p);
+}
+
+@utility menu-thin {
+  --menu-background: var(--color-background-thin);
+}
+
+@utility menu-thick {
+  --menu-background: var(--color-background-thick);
+}
