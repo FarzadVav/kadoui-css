@@ -9,7 +9,6 @@
   @apply f-center max-w-full;
 
   width: var(--badge-w);
-  min-width: var(--badge-w);
   height: var(--badge-h);
   padding: 0 var(--badge-px);
   gap: calc(var(--badge-px) / 1.5);
@@ -37,6 +36,8 @@
 @utility badge-square {
   --badge-w: var(--badge-h);
   --badge-px: 0;
+
+  min-width: var(--badge-w);
 }
 
 @utility badge-fill {

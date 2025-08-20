@@ -9,7 +9,6 @@
   @apply max-w-full f-center transition-all outline-solid outline-2 outline-transparent focus-visible:outline-palette disabled:opacity-50 disabled:cursor-not-allowed active:opacity-50;
 
   width: var(--btn-w);
-  min-width: var(--btn-w);
   height: var(--btn-h);
   padding: 0 var(--btn-px);
   gap: calc(var(--btn-px) / 1.5);
@@ -37,6 +36,8 @@
 @utility btn-square {
   --btn-w: var(--btn-h);
   --btn-px: 0;
+
+  min-width: var(--btn-w);
 }
 
 @utility btn-fill {
