@@ -1,77 +1,56 @@
-/* Indicator */
 @utility indicator {
   --indicator-size: calc(var(--spacing) * 6);
   --indicator-text: var(--text-sm);
   --indicator-line: var(--tw-leading, var(--text-sm--line-height));
 
-  @apply size-[var(--indicator-size)]
-  bg-palette text-brush f-center rounded-full absolute;
+  @apply bg-palette text-brush f-center rounded-full absolute;
 
+  width: clamp(var(--indicator-size), var(--indicator-size), var(--indicator-size));
+  height: clamp(var(--indicator-size), var(--indicator-size), var(--indicator-size));
   font-size: var(--indicator-text);
   line-height: var(--indicator-line);
 }
-/* --- */
 
-/* Sizes */
 @utility indicator-sm {
-  --indicator-size: calc(var(--spacing) * 5);
+  --indicator-size: calc(var(--spacing) * 3);
   --indicator-text: var(--text-xs);
   --indicator-line: var(--tw-leading, var(--text-xs--line-height));
 }
 
 @utility indicator-lg {
-  --indicator-size: calc(var(--spacing) * 7);
+  --indicator-size: calc(var(--spacing) * 9);
   --indicator-text: var(--text-base);
   --indicator-line: var(--tw-leading, var(--text-base--line-height));
 }
-/* --- */
 
-/* Positions */
 @utility indicator-t {
-  @apply indicator; /* Extend */
-
   @apply top-boundary left-center;
 }
 
 @utility indicator-tr {
-  @apply indicator; /* Extend */
-
   @apply top-boundary right-boundary;
 }
 
 @utility indicator-r {
-  @apply indicator; /* Extend */
-
   @apply right-boundary top-center;
 }
 
 @utility indicator-br {
-  @apply indicator; /* Extend */
-
   @apply bottom-boundary right-boundary;
 }
 
 @utility indicator-b {
-  @apply indicator; /* Extend */
-
   @apply bottom-boundary left-center;
 }
 
 @utility indicator-bl {
-  @apply indicator; /* Extend */
-
   @apply bottom-boundary left-boundary;
 }
 
 @utility indicator-l {
-  @apply indicator; /* Extend */
-
   @apply top-center left-boundary;
 }
 
 @utility indicator-tl {
-  @apply indicator; /* Extend */
-
   @apply top-boundary left-boundary;
 }
-/* --- */

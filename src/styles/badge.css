@@ -16,7 +16,7 @@
 }
 
 @utility badge-sm {
-  --badge-h: calc(var(--spacing) * 5);
+  --badge-h: calc(var(--spacing) * 3);
   --badge-px: calc(var(--spacing) * 0.5);
   --badge-radius: var(--radius-md);
   --badge-text: var(--text-xs);
@@ -24,7 +24,7 @@
 }
 
 @utility badge-lg {
-  --badge-h: calc(var(--spacing) * 7);
+  --badge-h: calc(var(--spacing) * 9);
   --badge-px: calc(var(--spacing) * 3);
   --badge-radius: var(--radius-xl);
   --badge-text: var(--text-base);
