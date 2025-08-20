@@ -1,0 +1,27 @@
+@utility border-separator {
+  @apply border-background-thin;
+}
+
+@utility separate-t {
+  @apply pt-6 mt-6 border-t border-separator;
+}
+
+@utility separate-r {
+  @apply pr-3 mr-3 border-r border-separator;
+}
+
+@utility separate-b {
+  @apply pb-6 mb-6 border-b border-separator;
+}
+
+@utility separate-l {
+  @apply pl-3 ml-3 border-l border-separator;
+}
+
+@utility separate-y {
+  @apply py-6 my-6 border-y border-separator;
+}
+
+@utility separate-x {
+  @apply px-3 mx-3 border-x border-separator;
+}
