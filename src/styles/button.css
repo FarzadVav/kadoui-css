@@ -6,7 +6,7 @@
   --btn-text: var(--text-base);
   --btn-line: var(--tw-leading, var(--text-base--line-height));
 
-  @apply f-center transition-all outline-solid outline-2 outline-transparent focus-visible:outline-palette disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply f-center transition-all outline-solid outline-2 outline-transparent focus-visible:outline-palette disabled:opacity-50 disabled:cursor-not-allowed active:opacity-50;
 
   width: var(--btn-w);
   height: var(--btn-h);
@@ -39,19 +39,19 @@
 }
 
 @utility btn-fill {
-  @apply bg-palette text-brush outline-offset-2 not-active:hover:bg-palette/90;
+  @apply bg-palette text-brush outline-offset-2;
 }
 
 @utility btn-outline {
-  @apply border border-palette text-palette outline-offset-2 not-active:hover:bg-palette/10;
+  @apply border border-palette text-palette outline-offset-2;
 }
 
 @utility btn-soft {
-  @apply bg-palette/10 text-palette not-active:hover:bg-palette/20;
+  @apply bg-palette/10 text-palette;
 }
 
 @utility btn-ghost {
-  @apply text-palette not-active:hover:bg-palette/10;
+  @apply text-palette;
 }
 
 @utility btn-icon-size {
