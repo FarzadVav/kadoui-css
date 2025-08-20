@@ -1,0 +1,53 @@
+/* Element should be `absolute` or `fixed` */
+
+@utility top-center {
+  @apply top-1/2 -translate-y-1/2;
+}
+
+@utility top-boundary {
+  @apply top-0 -translate-y-1/2;
+}
+
+@utility top-out {
+  @apply top-0 -translate-y-full;
+}
+
+@utility right-center {
+  @apply right-1/2 translate-x-1/2;
+}
+
+@utility right-boundary {
+  @apply right-0 translate-x-1/2;
+}
+
+@utility right-out {
+  @apply right-0 translate-x-full;
+}
+
+@utility bottom-center {
+  @apply bottom-1/2 translate-y-1/2;
+}
+
+@utility bottom-boundary {
+  @apply bottom-0 translate-y-1/2;
+}
+
+@utility bottom-out {
+  @apply bottom-0 translate-y-full;
+}
+
+@utility left-center {
+  @apply left-1/2 -translate-x-1/2;
+}
+
+@utility left-boundary {
+  @apply left-0 -translate-x-1/2;
+}
+
+@utility left-out {
+  @apply left-0 -translate-x-full;
+}
+
+@utility inset-center {
+  @apply top-center left-center;
+}
