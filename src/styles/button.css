@@ -60,11 +60,11 @@
   @apply text-palette hover:bg-palette/10;
 }
 
+@utility btn-link {
+  @apply underline decoration-transparent decoration-0 hover:decoration-palette focus-visible:decoration-palette;
+}
+
 @utility btn-icon-size {
   width: clamp(calc(var(--btn-h) / 2), calc(var(--btn-h) / 2), calc(var(--btn-h) / 2));
   height: clamp(calc(var(--btn-h) / 2), calc(var(--btn-h) / 2), calc(var(--btn-h) / 2));
-}
-
-@utility btn-link {
-  @apply underline decoration-transparent decoration-0 hover:decoration-palette focus-visible:decoration-palette;
 }

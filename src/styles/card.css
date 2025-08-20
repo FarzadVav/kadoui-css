@@ -17,7 +17,3 @@
   --card-p: calc(var(--spacing) * 6);
   --card-radius: var(--radius-2xl);
 }
-
-@utility card-pure {
-  --card-p: 0;
-}

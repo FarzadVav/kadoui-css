@@ -118,3 +118,182 @@
   @apply text-lg lg:text-xl font-bold;
 }
 ```
+
+---
+
+# Base
+
+```css
+@layer base {
+  html {
+    @apply scroll-smooth bg-background text-foreground;
+  }
+
+  * {
+    @apply select-none;
+
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--color-foreground)) transparent;
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  a,
+  span,
+  label {
+    @apply inline-block;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  textarea {
+    @apply resize-none;
+  }
+}
+```
+
+---
+
+# Layout
+
+```html
+<div class="container"></div>
+
+<div class="no-scrollbar"></div>
+
+<div class="f-align"></div>
+
+<div class="f-align-scroll"></div>
+
+<div class="f-center"></div>
+
+<div class="f-slidable"></div>
+
+<div class="w-fix"></div>
+```
+
+---
+
+# Button
+
+```html
+<button class="btn btn-sm">Small</button>
+<button class="btn">Normal and unstyled</button>
+<button class="btn btn-lg">Large</button>
+<button class="btn-square">Square</button>
+<button class="btn-full">Full width</button>
+
+<button class="btn btn-fill">Fill variant</button>
+<button class="btn btn-outline">Outline variant</button>
+<button class="btn btn-soft">Soft variant</button>
+<button class="btn btn-ghost">Ghost variant</button>
+<button class="btn btn-ghost btn-link">With link style</button>
+
+<button class="btn btn-fill pallete-beautifulRed">Beautiful red variant</button>
+
+<button class="btn btn-fill">
+  <span>With icon</span>
+  <i class="btn-icon-size"></i>
+</button>
+```
+
+---
+
+# Input
+
+```html
+
+```
+
+---
+
+# Badge
+
+```css
+
+```
+
+---
+
+# Card
+
+```css
+
+```
+
+---
+
+# Alert
+
+```css
+
+```
+
+---
+
+# Menu
+
+```css
+
+```
+
+---
+
+# Join
+
+```css
+
+```
+
+---
+
+# Avatar
+
+```css
+
+```
+
+---
+
+# Kbd
+
+```css
+
+```
+
+---
+
+# Position
+
+```css
+
+```
+
+---
+
+# Separator
+
+```css
+
+```
+
+---
+
+# Other
+
+```css
+
+```
+
+---
+
+# Kadoui primitive components
+
+Don't forget use primitive components for more features:
+
+- react
+- next

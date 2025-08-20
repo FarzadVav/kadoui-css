@@ -1,7 +1,7 @@
 @utility avatar {
   --avatar-size: calc(var(--spacing) * 12);
 
-  @apply rounded-full shadow;
+  @apply rounded-full ring-2 ring-palette;
 
   width: clamp(var(--avatar-size), var(--avatar-size), var(--avatar-size));
   height: clamp(var(--avatar-size), var(--avatar-size), var(--avatar-size));
