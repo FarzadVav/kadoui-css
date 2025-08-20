@@ -3,7 +3,6 @@
   --alert-text: var(--text-base);
   --alert-line: var(--tw-leading, var(--text-base--line-height));
   --alert-padding: calc(var(--spacing) * 3);
-  --alert-gap: calc(var(--spacing) * 1.5);
   --alert-radius: var(--radius-lg);
 
   @apply f-align rounded-lg w-full bg-palette/10 text-palette border border-palette;
@@ -12,7 +11,7 @@
   font-size: var(--alert-text);
   line-height: var(--alert-line);
   padding: var(--alert-padding);
-  gap: var(--alert-gap);
+  gap: var(--alert-padding);
   border-radius: var(--alert-radius);
 }
 
@@ -21,7 +20,6 @@
   --alert-text: var(--text-sm);
   --alert-line: var(--tw-leading, var(--text-sm--line-height));
   --alert-padding: calc(var(--spacing) * 1.5);
-  --alert-gap: calc(var(--spacing) * 0.5);
   --alert-radius: var(--radius-md);
 }
 
@@ -30,6 +28,5 @@
   --alert-text: var(--text-lg);
   --alert-line: var(--tw-leading, var(--text-lg--line-height));
   --alert-padding: calc(var(--spacing) * 6);
-  --alert-gap: calc(var(--spacing) * 3);
   --alert-radius: var(--radius-xl);
 }
