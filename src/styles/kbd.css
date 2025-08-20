@@ -5,7 +5,7 @@
   --kbd-text: var(--text-sm);
   --kbd-line: var(--tw-leading, var(--text-sm--line-height));
 
-  @apply transition-transform active:translate-y-0.5;
+  @apply bg-background-thick transition-transform active:translate-y-0.5;
 
   background: var(--kbd-background);
   padding: var(--kbd-p);
@@ -31,12 +31,4 @@
   --kbd-radius: var(--radius-xl);
   --kbd-text: var(--text-base);
   --kbd-line: var(--tw-leading, var(--text-base--line-height));
-}
-
-@utility kbd-thin {
-  --kbd-background: var(--color-background-thin);
-}
-
-@utility kbd-thick {
-  --kbd-background: var(--color-background-thick);
 }

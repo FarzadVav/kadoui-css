@@ -9,7 +9,6 @@
   --font-beautifulFont: var(--font-beautifulFont);
 
   --color-*: initial;
-  --color-background-thin: #ffffff;
   --color-background: #fafafa;
   --color-background-thick: #efefef;
   --color-foreground: #151515;
@@ -21,7 +20,6 @@
 }
 
 [data-theme="dark"] {
-  --color-background-thin: #202020;
   --color-background: #151515;
   --color-background-thick: #101010;
   --color-foreground: #fafafa;
@@ -30,11 +28,6 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 /* If you add a color, please add its palette as well */
-@utility palette-background-thin {
-  --color-palette: var(--color-background-thin);
-  --color-brush: var(--color-foreground);
-}
-
 @utility palette-background {
   --color-palette: var(--color-background);
   --color-brush: var(--color-foreground);

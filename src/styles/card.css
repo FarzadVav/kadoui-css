@@ -1,9 +1,9 @@
 @utility card {
-  --card-background: var(--color-background);
   --card-p: calc(var(--spacing) * 3);
   --card-radius: var(--radius-xl);
 
-  background-color: var(--card-background);
+  @apply bg-background-thick;
+
   padding: var(--card-p);
   border-radius: var(--card-radius);
 }
@@ -20,12 +20,4 @@
 
 @utility card-pure {
   --card-p: 0;
-}
-
-@utility card-thin {
-  --card-background: var(--color-background-thin);
-}
-
-@utility card-thick {
-  --card-background: var(--color-background-thick);
 }

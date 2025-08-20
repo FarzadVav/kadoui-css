@@ -1,5 +1,5 @@
 @utility border-separator {
-  @apply border-background-thin;
+  @apply border-background-thick;
 }
 
 @utility separate-t {

@@ -3,7 +3,7 @@
 }
 
 @utility skeleton {
-  @apply bg-background-thin rounded-lg animate-pulse;
+  @apply bg-background-thick rounded-lg animate-pulse;
 }
 
 @utility ignore {

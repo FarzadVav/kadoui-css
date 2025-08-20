@@ -1,11 +1,9 @@
 @utility menu {
-  --menu-background: var(--color-background);
   --menu-p: calc(var(--spacing) * 3);
   --menu-radius: var(--radius-lg);
 
-  @apply w-max;
+  @apply bg-background-thick w-max;
 
-  background-color: var(--menu-background);
   padding: var(--menu-p);
   border-radius: var(--menu-radius);
 }
@@ -30,12 +28,4 @@
   @apply f-align;
 
   column-gap: var(--menu-p);
-}
-
-@utility menu-thin {
-  --menu-background: var(--color-background-thin);
-}
-
-@utility menu-thick {
-  --menu-background: var(--color-background-thick);
 }

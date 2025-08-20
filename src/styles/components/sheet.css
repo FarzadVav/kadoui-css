@@ -11,7 +11,7 @@
 }
 
 @utility sheet-handlebar {
-  @apply w-1/4 h-1 rounded-full bg-background-thin;
+  @apply w-1/4 h-1 rounded-full bg-background-thick;
 }
 
 @utility sheet-content {
