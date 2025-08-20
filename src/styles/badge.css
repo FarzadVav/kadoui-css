@@ -40,6 +40,10 @@
   min-width: var(--badge-w);
 }
 
+@utility badge-full {
+  --badge-w: 100%;
+}
+
 @utility badge-fill {
   @apply bg-palette text-brush;
 }

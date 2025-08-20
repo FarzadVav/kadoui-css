@@ -40,6 +40,10 @@
   min-width: var(--btn-w);
 }
 
+@utility btn-full {
+  --btn-w: 100%;
+}
+
 @utility btn-fill {
   @apply bg-palette text-brush outline-offset-2 hover:bg-palette/90;
 }
