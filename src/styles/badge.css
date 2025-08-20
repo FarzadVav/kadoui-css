@@ -1,34 +1,34 @@
 @utility badge {
   --badge-h: calc(var(--spacing) * 6);
-  --badge-text: var(--text-sm);
-  --badge-line: var(--tw-leading, var(--text-sm--line-height));
   --badge-px: calc(var(--spacing) * 1.5);
   --badge-radius: var(--radius-lg);
+  --badge-text: var(--text-sm);
+  --badge-line: var(--tw-leading, var(--text-sm--line-height));
 
   @apply f-center w-fix;
 
   height: var(--badge-h);
+  padding: 0 var(--badge-px);
+  gap: calc(var(--badge-px) / 1.5);
+  border-radius: var(--badge-radius);
   font-size: var(--badge-text);
   line-height: var(--badge-line);
-  padding: 0 var(--badge-px);
-  gap: calc(var(--badge-px) / 2);
-  border-radius: var(--badge-radius);
 }
 
 @utility badge-sm {
   --badge-h: calc(var(--spacing) * 5);
-  --badge-text: var(--text-xs);
-  --badge-line: var(--tw-leading, var(--text-xs--line-height));
   --badge-px: calc(var(--spacing) * 0.5);
   --badge-radius: var(--radius-md);
+  --badge-text: var(--text-xs);
+  --badge-line: var(--tw-leading, var(--text-xs--line-height));
 }
 
 @utility badge-lg {
   --badge-h: calc(var(--spacing) * 7);
-  --badge-text: var(--text-base);
-  --badge-line: var(--tw-leading, var(--text-base--line-height));
   --badge-px: calc(var(--spacing) * 3);
   --badge-radius: var(--radius-xl);
+  --badge-text: var(--text-base);
+  --badge-line: var(--tw-leading, var(--text-base--line-height));
 }
 
 @utility badge-fill {

@@ -11,7 +11,7 @@
   font-size: var(--alert-text);
   line-height: var(--alert-line);
   padding: var(--alert-padding);
-  gap: calc(var(--alert-padding) / 2);
+  gap: calc(var(--alert-padding) / 1.5);
   border-radius: var(--alert-radius);
 }
 
