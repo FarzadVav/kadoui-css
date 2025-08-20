@@ -1,30 +1,27 @@
-/* card */
 @utility card {
   --card-background: var(--color-background);
   --card-p: calc(var(--spacing) * 3);
-
-  @apply rounded-xl;
+  --card-radius: var(--radius-xl);
 
   background-color: var(--card-background);
   padding: var(--card-p);
+  border-radius: var(--card-radius);
 }
-/* --- */
 
-/* Sizes */
 @utility card-sm {
   --card-p: calc(var(--spacing) * 1.5);
+  --card-radius: var(--radius-lg);
 }
 
 @utility card-lg {
   --card-p: calc(var(--spacing) * 6);
+  --card-radius: var(--radius-2xl);
 }
 
 @utility card-pure {
   --card-p: 0;
 }
-/* --- */
 
-/* Colors */
 @utility card-thin {
   --card-background: var(--color-background-thin);
 }
@@ -32,4 +29,3 @@
 @utility card-thick {
   --card-background: var(--color-background-thick);
 }
-/* --- */
