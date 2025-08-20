@@ -1,14 +1,15 @@
 @utility btn {
-  --btn-w: clamp(max-content, max-content, 100%);
+  --btn-w: max-content;
   --btn-h: calc(var(--spacing) * 9);
   --btn-px: calc(var(--spacing) * 3);
   --btn-radius: var(--radius-lg);
   --btn-text: var(--text-base);
   --btn-line: var(--tw-leading, var(--text-base--line-height));
 
-  @apply f-center transition-all outline-solid outline-2 outline-transparent focus-visible:outline-palette disabled:opacity-50 disabled:cursor-not-allowed active:opacity-50;
+  @apply max-w-full f-center transition-all outline-solid outline-2 outline-transparent focus-visible:outline-palette disabled:opacity-50 disabled:cursor-not-allowed active:opacity-50;
 
   width: var(--btn-w);
+  min-width: var(--btn-w);
   height: var(--btn-h);
   padding: 0 var(--btn-px);
   gap: calc(var(--btn-px) / 1.5);
@@ -34,7 +35,7 @@
 }
 
 @utility btn-square {
-  --btn-w: clamp(var(--btn-h), var(--btn-h), var(--btn-h));
+  --btn-w: var(--btn-h);
   --btn-px: 0;
 }
 

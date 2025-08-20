@@ -1,14 +1,15 @@
 @utility badge {
-  --badge-w: clamp(max-content, max-content, 100%);
+  --badge-w: max-content;
   --badge-h: calc(var(--spacing) * 9);
   --badge-px: calc(var(--spacing) * 3);
   --badge-radius: var(--radius-lg);
   --badge-text: var(--text-base);
   --badge-line: var(--tw-leading, var(--text-base--line-height));
 
-  @apply f-center w-fix;
+  @apply f-center max-w-full;
 
   width: var(--badge-w);
+  min-width: var(--badge-w);
   height: var(--badge-h);
   padding: 0 var(--badge-px);
   gap: calc(var(--badge-px) / 1.5);
@@ -34,7 +35,7 @@
 }
 
 @utility badge-square {
-  --badge-w: clamp(var(--badge-h), var(--badge-h), var(--badge-h));
+  --badge-w: var(--badge-h);
   --badge-px: 0;
 }
 
