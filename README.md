@@ -10,7 +10,7 @@
   --color-background: #fafafa;
   --color-background-thick: #efefef;
   --color-foreground: #151515;
-  --color-beautifulRed: #9f0000;
+  --color-beautifulRed: #9e0000;
   /* You can add any colors */
 
   --color-palette: var(--color-foreground);
@@ -27,17 +27,29 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 /* If you add a color, please add its palette as well */
+@utility palette-background-thin {
+  --color-palette: var(--color-background-thin);
+  --color-brush: var(--color-foreground);
+}
+
 @utility palette-background {
   --color-palette: var(--color-background);
   --color-brush: var(--color-foreground);
 }
 
+@utility palette-background-thick {
+  --color-palette: var(--color-background-thick);
+  --color-brush: var(--color-foreground);
+}
+
 @utility palette-foreground {
   --color-palette: var(--color-foreground);
+  --color-brush: var(--color-background);
 }
 
 @utility palette-beautifulRed {
   --color-palette: var(--color-beautifulRed);
+  --color-brush: var(--color-background);
 }
 ```
 
