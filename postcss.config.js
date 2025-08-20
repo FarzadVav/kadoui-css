@@ -1,5 +1,5 @@
-// Optional PostCSS configuration for applications that need it
-export const postcssConfig = {
+// Optional PostCSS configuration for apps that need it
+export const KadouiPostcssConfig = {
   plugins: {
     "@tailwindcss/postcss": {},
   },
