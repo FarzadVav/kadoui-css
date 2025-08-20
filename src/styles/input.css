@@ -1,7 +1,5 @@
-/*
-  Input
-  This element should be <label>
-*/
+/* Input element should be a `label` */
+
 @utility input {
   --input-h: calc(var(--spacing) * 9);
   --input-w: auto;
@@ -12,9 +10,9 @@
   @apply flex rounded-lg gap-3 cursor-pointer relative transition-all outline-solid outline-2 outline-transparent focus-within:outline-palette disabled:opacity-50 disabled:cursor-not-allowed;
 
   width: var(--input-w);
+  height: var(--input-h);
   font-size: var(--input-text);
   line-height: var(--input-line);
-  height: var(--input-h);
 
   &:has(input, select) {
     @apply items-center;
@@ -29,15 +27,14 @@
   }
 }
 
-/* Sizes */
 @utility input-sm {
-  --input-h: calc(var(--spacing) * 7);
+  --input-h: calc(var(--spacing) * 6);
   --input-text: var(--text-sm);
   --input-line: var(--tw-leading, var(--text-sm--line-height));
 }
 
 @utility input-lg {
-  --input-h: calc(var(--spacing) * 11);
+  --input-h: calc(var(--spacing) * 12);
   --input-text: var(--text-lg);
   --input-line: var(--tw-leading, var(--text-lg--line-height));
 }
@@ -46,9 +43,7 @@
   --input-w: var(--input-h);
   --input-px: 0;
 }
-/* --- */
 
-/* Field */
 @utility input-field {
   @apply bg-transparent flex-1 not-[[type=file]]:h-full max-w-full [[type=file]]:cursor-pointer;
 
@@ -57,36 +52,27 @@
   }
 }
 
-/* --- */
-
-/* Variants */
 @utility input-outline {
-  @apply input;
-  /* Extend */
-
   @apply border text-palette border-palette outline-offset-2;
 }
 
 @utility input-soft {
-  @apply input;
-  /* Extend */
-
   @apply text-palette bg-palette/10;
 }
 
 @utility input-ghost {
-  @apply input;
-  /* Extend */
-
   @apply text-palette hover:bg-palette/10 focus-within:bg-palette/10;
 }
 
-/* --- */
-
-/* Utils */
 @utility input-icon-size {
-  width: calc(var(--input-h) / 2);
-  min-width: calc(var(--input-h) / 2);
-  height: calc(var(--input-h) / 2);
+  width: clamp(
+    calc(var(--input-h) / 2),
+    calc(var(--input-h) / 2),
+    calc(var(--input-h) / 2)
+  );
+  height: clamp(
+    calc(var(--input-h) / 2),
+    calc(var(--input-h) / 2),
+    calc(var(--input-h) / 2)
+  );
 }
-/* --- */
