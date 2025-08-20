@@ -21,3 +21,7 @@
 @utility f-center {
   @apply f-align justify-center;
 }
+
+@utility slidable {
+  @apply w-[90%] min-w-[90%] sm:w-2/5 sm:min-w-2/5;
+}
