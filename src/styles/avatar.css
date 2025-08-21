@@ -1,14 +1,15 @@
 @utility avatar {
-  --avatar-bg: var(--color-background);
+  --avatar-bg: var(--color-background-thick);
   --avatar-size: calc(var(--spacing) * 12);
 
   @apply rounded-full;
 
+  background-color: var(--avatar-bg);
   width: clamp(var(--avatar-size), var(--avatar-size), var(--avatar-size));
   height: clamp(var(--avatar-size), var(--avatar-size), var(--avatar-size));
 
   &:where(.card *) {
-    --avatar-bg: var(--color-background-thick);
+    --avatar-bg: var(--color-background);
   }
 }
 
