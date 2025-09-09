@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "@kadoui/css";
+
+@theme {
+  --color-*: initial;
+  --color-background: #efefef;
+  --color-background-thick: #dfdfdf;
+  --color-foreground: #151515;
+
+  --color-palette: var(--color-foreground);
+  --color-brush: var(--color-background);
+}
+
+[data-theme="dark"] {
+  --color-background: #151515;
+  --color-background-thick: #202020;
+  --color-foreground: #fafafa;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@utility palette-background {
+  --color-palette: var(--color-background);
+  --color-brush: var(--color-foreground);
+}
+
+@utility palette-background-thick {
+  --color-palette: var(--color-background-thick);
+  --color-brush: var(--color-foreground);
+}
+
+@utility palette-foreground {
+  --color-palette: var(--color-foreground);
+}
+
+@layer base {
+  html {
+    font-family: sans-serif;
+  }
+}
