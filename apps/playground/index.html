@@ -17,32 +17,51 @@
     <title>Kadoui-css Playground</title>
   </head>
   <body>
-    <div
-      class="container my-3"
-      id="app">
+    <p class="container heading mt-12">Layout</p>
+    <div class="container mt-6">
       <p>.f-align</p>
-      <div class="card f-align mt-3 gap-3">
+      <div
+        data-kadoui="element"
+        class="card f-align mt-3 gap-3">
         <div class="p-3 bg-background">Item 1</div>
         <div class="p-3 bg-background">Item 2</div>
         <div class="p-3 bg-background">Item 3</div>
       </div>
 
       <p class="mt-6">.f-center</p>
-      <div class="card f-center mt-3 gap-3">
+      <div
+        data-kadoui="element"
+        class="card f-center mt-3 gap-3">
         <div class="p-3 bg-background">Item 1</div>
         <div class="p-3 bg-background">Item 2</div>
         <div class="p-3 bg-background">Item 3</div>
       </div>
 
       <p class="mt-6">.f-align-scroll + .slidable</p>
-      <div class="f-align-scroll mt-3 gap-3">
-        <div class="card slidable">Item 1</div>
-        <div class="card slidable">Item 2</div>
-        <div class="card slidable">Item 3</div>
+      <div
+        data-kadoui="element"
+        class="f-align-scroll mt-3 gap-3">
+        <div
+          data-kadoui="element"
+          class="card slidable">
+          Item 1
+        </div>
+        <div
+          data-kadoui="element"
+          class="card slidable">
+          Item 2
+        </div>
+        <div
+          data-kadoui="element"
+          class="card slidable">
+          Item 3
+        </div>
       </div>
 
       <p class="mt-6">.no-scrollbar</p>
-      <div class="f-align-scroll no-scrollbar mt-3 gap-3">
+      <div
+        data-kadoui="element"
+        class="f-align-scroll no-scrollbar mt-3 gap-3">
         <div class="card slidable">Item 1</div>
         <div class="card slidable">Item 2</div>
         <div class="card slidable">Item 3</div>
@@ -50,14 +69,86 @@
 
       <p class="mt-6">.w-fix</p>
       <div class="card w-full max-w-96 mt-3">
-        <div class="w-fix p-3 bg-background">Item 1</div>
-        <div class="w-fix p-3 bg-background mt-3">
+        <div
+          data-kadoui="element"
+          class="w-fix p-3 bg-background">
+          Item 1
+        </div>
+        <div
+          data-kadoui="element"
+          class="w-fix p-3 bg-background mt-3">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ullam veniam libero,
           doloremque nobis perferendis eos temporibus autem, laboriosam aliquam mollitia
           quam assumenda culpa consequatur saepe quod enim esse neque!
         </div>
       </div>
     </div>
+
+    <p class="container heading mt-12">Button</p>
+    <div class="container mt-6">
+      <p>Variants</p>
+      <div class="f-align gap-3 mt-3">
+        <button
+          data-kadoui="element"
+          class="btn btn-fill">
+          Fill
+        </button>
+        <button
+          data-kadoui="element"
+          class="btn btn-outline">
+          Outline
+        </button>
+        <button
+          data-kadoui="element"
+          class="btn btn-soft">
+          Soft
+        </button>
+        <button
+          data-kadoui="element"
+          class="btn btn-ghost">
+          Ghost
+        </button>
+      </div>
+
+      <p
+        data-kadoui="element"
+        class="mt-6">
+        Sizes
+      </p>
+      <div class="f-align gap-3 mt-3">
+        <button
+          class="btn btn-fill btn-sm"
+          data-kadoui="element">
+          Small
+        </button>
+        <button
+          class="btn btn-fill"
+          data-kadoui="element">
+          Medium
+        </button>
+        <button
+          class="btn btn-fill btn-lg"
+          data-kadoui="element">
+          Large
+        </button>
+        <button
+          class="btn btn-fill btn-square"
+          data-kadoui="element">
+          SQ
+        </button>
+        <button
+          class="btn btn-fill"
+          data-kadoui="element">
+          <span>With icon</span>
+          <i
+            class="btn-icon-size"
+            data-lucide="sparkles"></i>
+        </button>
+      </div>
+    </div>
+
+    <p class="container heading my-12">The end</p>
+
     <script
       type="module"
       src="/src/main.ts"></script>

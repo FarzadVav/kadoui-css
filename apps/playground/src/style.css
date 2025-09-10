@@ -38,3 +38,11 @@
     font-family: sans-serif;
   }
 }
+
+@utility kadoui-element-border {
+  @apply border-2 border-[red];
+}
+
+@utility heading {
+  @apply text-5xl font-black;
+}
