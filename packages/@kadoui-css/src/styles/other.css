@@ -1,9 +1,13 @@
+@utility link {
+  @apply underline decoration-transparent decoration-0 hover:decoration-palette focus-visible:decoration-palette;
+}
+
 @utility highlight {
   @apply px-1.5 bg-palette/10 text-palette rounded font-bold;
 }
 
 @utility skeleton {
-  @apply bg-background-thick rounded-lg animate-pulse;
+  @apply card animate-pulse;
 }
 
 @utility ignore {
@@ -14,6 +18,6 @@
   @apply opacity-100 visible pointer-events-auto;
 }
 
-@utility slider {
+@utility range-slider {
   @apply bg-palette rounded-full appearance-none cursor-grab active:cursor-grabbing;
 }
