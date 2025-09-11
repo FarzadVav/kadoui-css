@@ -1,5 +1,4 @@
 @utility kbd {
-  --kbd-background: var(--color-background);
   --kbd-p: calc(var(--spacing) * 3);
   --kbd-radius: var(--radius-lg);
   --kbd-text: var(--text-sm);
@@ -7,7 +6,6 @@
 
   @apply bg-background-thick transition-transform active:translate-y-0.5;
 
-  background: var(--kbd-background);
   padding: var(--kbd-p);
   border-radius: var(--kbd-radius);
   font-size: var(--kbd-text);
