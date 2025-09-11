@@ -5,11 +5,7 @@ const kadouiElements = document.querySelectorAll("[data-kadoui=element]");
 
 Array.from(kadouiElements).forEach((elem) => {
   elem.addEventListener("click", () => {
-    elem.classList.add("kadoui-element-border");
     alert(`<${elem.localName} class="${elem.className}" />`);
-    setTimeout(() => {
-      elem.classList.remove("kadoui-element-border");
-    }, 1000);
   });
 });
 
