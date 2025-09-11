@@ -2,14 +2,11 @@
   @apply f-align ltr:*:not-first:rounded-l-none ltr:*:not-last:rounded-r-none rtl:*:not-first:rounded-r-none rtl:*:not-last:rounded-l-none;
 }
 
+/* Consider border color may not be suitable for your use, you should change it */
 @utility join-border {
-  @apply join; /* Extend */
-
-  @apply ltr:*:not-first:border-l rtl:*:not-first:border-r *:border-brush;
+  @apply ltr:*:not-last:border-r rtl:*:not-last:border-l *:border-palette;
 }
 
-@utility join-no-inner-border {
-  @apply join; /* Extend */
-
-  @apply ltr:*:not-last:border-r-0 rtl:*:not-last:border-l-0;
+@utility join-fix-border {
+  @apply ltr:*:not-first:border-l-0 rtl:*:not-first:border-r-0;
 }
