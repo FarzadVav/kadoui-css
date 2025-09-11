@@ -2,26 +2,59 @@
   @apply border-background-thick;
 }
 
+@utility separate {
+  --separate-space-y: calc(var(--spacing) * 6);
+  --separate-space-x: calc(var(--spacing) * 3);
+}
+
+@utility separate-sm {
+  --separate-space-y: calc(var(--spacing) * 3);
+  --separate-space-x: calc(var(--spacing) * 1.5);
+}
+
+@utility separate-lg {
+  --separate-space-y: calc(var(--spacing) * 9);
+  --separate-space-x: calc(var(--spacing) * 6);
+}
+
 @utility separate-t {
-  @apply pt-6 mt-6 border-t border-separator;
+  @apply border-t border-separator;
+
+  padding-top: var(--separate-space-y);
+  margin-top: var(--separate-space-y);
 }
 
 @utility separate-r {
-  @apply pr-3 mr-3 border-r border-separator;
+  @apply border-r border-separator;
+
+  padding-right: var(--separate-space-x);
+  margin-right: var(--separate-space-x);
 }
 
 @utility separate-b {
-  @apply pb-6 mb-6 border-b border-separator;
+  @apply border-b border-separator;
+
+  padding-bottom: var(--separate-space-y);
+  margin-bottom: var(--separate-space-y);
 }
 
 @utility separate-l {
-  @apply pl-3 ml-3 border-l border-separator;
+  @apply border-l border-separator;
+
+  padding-left: var(--separate-space-x);
+  margin-left: var(--separate-space-x);
 }
 
 @utility separate-y {
-  @apply py-6 my-6 border-y border-separator;
+  @apply border-y border-separator;
+
+  padding: var(--separate-space-y) 0;
+  margin: var(--separate-space-y) 0;
 }
 
 @utility separate-x {
-  @apply px-3 mx-3 border-x border-separator;
+  @apply border-x border-separator;
+
+  padding: 0 var(--separate-space-x);
+  margin: 0 var(--separate-space-x);
 }
