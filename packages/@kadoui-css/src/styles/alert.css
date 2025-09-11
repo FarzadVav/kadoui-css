@@ -2,7 +2,7 @@
   --alert-min-h: calc(var(--spacing) * 9);
   --alert-text: var(--text-base);
   --alert-line: var(--tw-leading, var(--text-base--line-height));
-  --alert-padding: calc(var(--spacing) * 3);
+  --alert-space: calc(var(--spacing) * 3);
   --alert-radius: var(--radius-lg);
 
   @apply f-align rounded-lg w-full bg-palette/10 text-palette border border-palette;
@@ -10,8 +10,8 @@
   min-height: var(--alert-min-h);
   font-size: var(--alert-text);
   line-height: var(--alert-line);
-  padding: var(--alert-padding);
-  gap: calc(var(--alert-padding) / 1.5);
+  padding: var(--alert-space);
+  gap: calc(var(--alert-space));
   border-radius: var(--alert-radius);
 }
 
@@ -19,7 +19,7 @@
   --alert-min-h: calc(var(--spacing) * 6);
   --alert-text: var(--text-sm);
   --alert-line: var(--tw-leading, var(--text-sm--line-height));
-  --alert-padding: calc(var(--spacing) * 1.5);
+  --alert-space: calc(var(--spacing) * 1.5);
   --alert-radius: var(--radius-md);
 }
 
@@ -27,19 +27,13 @@
   --alert-min-h: calc(var(--spacing) * 12);
   --alert-text: var(--text-lg);
   --alert-line: var(--tw-leading, var(--text-lg--line-height));
-  --alert-padding: calc(var(--spacing) * 6);
+  --alert-space: calc(var(--spacing) * 6);
   --alert-radius: var(--radius-xl);
 }
 
 @utility alert-icon-size {
-  width: clamp(
-    calc(var(--alert-min-h) / 2),
-    calc(var(--alert-min-h) / 2),
-    calc(var(--alert-min-h) / 2)
-  );
-  height: clamp(
-    calc(var(--alert-min-h) / 2),
-    calc(var(--alert-min-h) / 2),
-    calc(var(--alert-min-h) / 2)
-  );
+  width: calc(var(--alert-min-h) / 2);
+  min-width: calc(var(--alert-min-h) / 2);
+  height: calc(var(--alert-min-h) / 2);
+  min-height: calc(var(--alert-min-h) / 2);
 }
