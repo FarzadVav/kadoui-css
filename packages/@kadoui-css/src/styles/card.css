@@ -1,19 +1,35 @@
 @utility card {
-  --card-p: calc(var(--spacing) * 3);
+  --card-space: calc(var(--spacing) * 3);
   --card-radius: var(--radius-xl);
 
   @apply bg-background-thick;
 
-  padding: var(--card-p);
+  padding: var(--card-space);
   border-radius: var(--card-radius);
 }
 
 @utility card-sm {
-  --card-p: calc(var(--spacing) * 1.5);
+  --card-space: calc(var(--spacing) * 1.5);
   --card-radius: var(--radius-lg);
 }
 
 @utility card-lg {
-  --card-p: calc(var(--spacing) * 6);
+  --card-space: calc(var(--spacing) * 6);
   --card-radius: var(--radius-2xl);
+}
+
+@utility card-menu {
+  @apply w-max;
+}
+
+@utility card-y {
+  @apply flex flex-col justify-between;
+
+  row-gap: calc(var(--card-space) / 2);
+}
+
+@utility card-x {
+  @apply f-align justify-between;
+
+  column-gap: calc(var(--card-space) / 2);
 }
