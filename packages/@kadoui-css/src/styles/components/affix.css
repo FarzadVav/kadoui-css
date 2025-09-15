@@ -1,35 +1,3 @@
 @utility affix {
   @apply fixed transition-all z-40 data-[state=false]:ignore;
 }
-
-@utility affix-tl {
-  @apply top-3 left-3;
-}
-
-@utility affix-t {
-  @apply top-3 left-center;
-}
-
-@utility affix-tr {
-  @apply top-3 right-3;
-}
-
-@utility affix-r {
-  @apply top-center right-3;
-}
-
-@utility affix-br {
-  @apply bottom-3 right-3;
-}
-
-@utility affix-b {
-  @apply bottom-3 left-center;
-}
-
-@utility affix-bl {
-  @apply bottom-3 left-3;
-}
-
-@utility affix-l {
-  @apply top-center left-3;
-}
