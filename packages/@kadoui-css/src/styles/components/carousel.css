@@ -3,7 +3,7 @@
 }
 
 @utility carousel-container {
-  @apply f-align-scroll;
+  @apply f-align-scroll scroll-smooth;
 }
 
 @utility carousel-left-fade {

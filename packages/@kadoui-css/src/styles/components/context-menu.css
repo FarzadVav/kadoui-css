@@ -1,3 +1,7 @@
-@utility context-menu-content {
-  @apply z-10 fixed transition-all not-[.context-menu-active]:ignore;
+@utility context-menu {
+  @apply relative;
+}
+
+@utility context-menu-body {
+  @apply z-10 absolute transition-all data-[state=false]:ignore;
 }
