@@ -3,5 +3,5 @@
 }
 
 @utility context-menu-body {
-  @apply z-10 absolute transition-all data-[state=false]:ignore;
+  @apply z-10 fixed transition-all data-[state=false]:ignore;
 }
