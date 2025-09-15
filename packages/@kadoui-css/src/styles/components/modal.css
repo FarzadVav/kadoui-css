@@ -1,5 +1,5 @@
 @utility modal-portal {
-  @apply fixed inset-0 z-50 f-center bg-foreground/10;
+  @apply fixed inset-0 z-50 f-center bg-foreground/50;
 }
 
 @utility modal-body {
