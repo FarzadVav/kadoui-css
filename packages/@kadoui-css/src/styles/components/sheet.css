@@ -1,5 +1,5 @@
 @utility sheet-portal {
-  @apply fixed inset-0 z-50 bg-foreground/10;
+  @apply fixed inset-0 z-50 bg-foreground/50;
 }
 
 @utility sheet-body {
