@@ -1,7 +1,7 @@
 @utility tabs-list {
-  @apply join-border;
+  @apply join;
 }
 
 @utility tabs-panel {
-  @apply p-3 rounded-lg bg-background-thick mt-1.5;
+  @apply card mt-1.5;
 }
