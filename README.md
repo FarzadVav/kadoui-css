@@ -1,4 +1,10 @@
-# Add the following code to your main CSS file
+# Kadoui-css
+
+The TailwindCSS styles for build robust UIs
+
+---
+
+### Add the following code to your main CSS file
 
 ```css
 @import "tailwindcss";
@@ -60,61 +66,62 @@
 ### We recommend that you develop the UI of your app with this system
 
 ```
-  Spacing (`Recommendation`):
+  Media query:
+    sm < mobile
+    sm > tablet
+    lg < tablet
+    lg > desktop
+
+  Spacing:
     lvl-1: 0.5
     lvl-2: 1.5
     lvl-3: 3
     lvl-4: 6
     lvl-5: 9
+    lvl-6: 12
+    lvl-7: 16
+    lvl-8: 20
 
-  Color shades (`Recommendation`):
+  Color shades:
     lvl-1: 100%
     lvl-2: 90%
-    lvl-3: 50%
-    lvl-4: 20%
-    lvl-5: 10%
+    lvl-3: 80%
+    lvl-4: 50%
+    lvl-5: 20%
+    lvl-6: 10%
 
-  Z-index layers (`Recommendation, No more is needed`):
+  Z-index layers:
     lvl-1: 10
     lvl-2: 20
     lvl-3: 30
     lvl-4: 40
     lvl-5: 50
 
-  Border radius (`You can customize the TailwindCSS theme config`):
+  Border radius:
     lvl-1: rounded
     lvl-2: rounded-md
     lvl-3: rounded-lg
     lvl-4: rounded-xl
     lvl-5: rounded-2xl
 
-  Heading (`You can customize the TailwindCSS theme config`):
-    lvl-1: text-base
-    lvl-2: text-lg
-    lvl-3: text-xl
-    lvl-4: text-2xl
-    lvl-5: text-3xl
+  Heading:
+    text-xl sm:text-2xl lg:text-5xl font-black
 
-  Paragraph (`You can customize the TailwindCSS theme config`):
-    lvl-1: text-xs
-    lvl-2: text-sm
-    lvl-3: text-base
-    lvl-4: text-lg
-    lvl-5: text-xl
+  Title:
+    text-base sm:text-lg lg:text-xl font-bold
+
+  Paragraph:
+    text-sm sm:text-base
 ```
 
 ---
 
-### Also, please add the `heading` and `title` classes of your app
+### Kadoui toolchain
 
-```css
-/* These are examples */
+Consider that `Kadoui-css` should be mix by a logical UI package, You can use `Kadoui-react` or build your own.
 
-@utility heading {
-  @apply text-2xl lg:text-5xl font-black;
-}
+[Read about `Kadoui-react`](https://www.npmjs.com/package/@kadoui/react)
 
-@utility title {
-  @apply text-lg lg:text-xl font-bold;
-}
-```
+---
+
+Written with ❤️ by [Farzad Vahdati](https://github.com/FarzadVav)
