@@ -1,0 +1,11 @@
+@utility select-box-input {
+  @apply relative;
+}
+
+@utility select-box-list {
+  @apply card card-y absolute bottom-out left-0 right-0 cursor-default z-10;
+}
+
+@utility select-box-option {
+  @apply btn btn-full justify-start;
+}
