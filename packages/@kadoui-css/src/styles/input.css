@@ -47,7 +47,7 @@
 }
 
 @utility input-field {
-  @apply bg-transparent flex-1 not-[[type=file]]:h-full max-w-full [[type=file]]:cursor-pointer focus:outline-none;
+  @apply bg-transparent flex-1 not-[[type=file]]:h-full max-w-full [[type=file]]:cursor-pointer;
 
   &:where(select) {
     @apply cursor-pointer;

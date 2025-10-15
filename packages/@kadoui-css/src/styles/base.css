@@ -5,7 +5,7 @@
 
   * {
     @apply select-none;
-    
+
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--color-foreground)) transparent;
   }
@@ -18,6 +18,11 @@
 
   button {
     @apply cursor-pointer;
+  }
+
+  input:focus,
+  textarea:focus {
+    @apply outline-none;
   }
 
   textarea {
