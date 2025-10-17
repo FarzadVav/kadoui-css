@@ -17,6 +17,7 @@
 /* Components */
 @import "./styles/components/affix.css";
 @import "./styles/components/carousel.css";
+@import "./styles/components/choice.css";
 @import "./styles/components/show-more.css";
 @import "./styles/components/accordion.css";
 @import "./styles/components/context-menu.css";

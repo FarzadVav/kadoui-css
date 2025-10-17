@@ -1,0 +1,77 @@
+@utility choice {
+  --choice-size: calc(var(--spacing) * 9);
+  --choice-p: calc(var(--spacing) * 0.75);
+
+  @apply border border-palette focus-visible:outline-1 outline-offset-2;
+
+  width: var(--choice-size);
+  height: var(--choice-size);
+  padding: var(--choice-p);
+}
+
+@utility choice-sm {
+  --choice-size: calc(var(--spacing) * 6);
+}
+
+@utility choice-lg {
+  --choice-size: calc(var(--spacing) * 12);
+}
+
+@utility choice-radio {
+  @apply rounded-full f-center;
+
+  &[data-state="false"]>.choice-radio-trigger {
+    @apply opacity-0 scale-0;
+  }
+}
+
+@utility choice-radio-trigger {
+  @apply bg-palette rounded-full transition-all f-center text-brush;
+
+  width: calc(var(--choice-size) - var(--choice-p) * 2);
+  height: calc(var(--choice-size) - var(--choice-p) * 2);
+}
+
+@utility choice-checkbox {
+  @apply rounded f-center;
+
+  &[data-state="false"]>.choice-checkbox-trigger {
+    @apply opacity-0 scale-0;
+  }
+}
+
+@utility choice-checkbox-trigger {
+  @apply bg-palette rounded-xs transition-all f-center text-brush;
+
+  width: calc(var(--choice-size) - var(--choice-p) * 2);
+  height: calc(var(--choice-size) - var(--choice-p) * 2);
+}
+
+@utility choice-switch {
+  @apply rounded-full f-align;
+
+  width: calc(var(--choice-size) * 2) !important;
+
+  &[data-state="true"] {
+    @apply justify-end bg-background-thick;
+
+    &>.choice-switch-trigger {
+      @apply bg-palette;
+    }
+  }
+
+  &[data-state="false"]>.choice-switch-trigger {
+    @apply bg-background-thick;
+  }
+
+  &:active>.choice-switch-trigger {
+    width: var(--choice-size);
+  }
+}
+
+@utility choice-switch-trigger {
+  @apply bg-palette rounded-full transition-all f-center text-brush;
+
+  width: calc(var(--choice-size) - var(--choice-p) * 2);
+  height: calc(var(--choice-size) - var(--choice-p) * 2);
+}
