@@ -20,7 +20,7 @@
 @utility choice-radio {
   @apply rounded-full f-center;
 
-  &[data-state="false"]>.choice-radio-trigger {
+  &[data-state="false"] > .choice-radio-trigger {
     @apply opacity-0 scale-0;
   }
 }
@@ -35,7 +35,7 @@
 @utility choice-checkbox {
   @apply rounded f-center;
 
-  &[data-state="false"]>.choice-checkbox-trigger {
+  &[data-state="false"] > .choice-checkbox-trigger {
     @apply opacity-0 scale-0;
   }
 }
@@ -48,29 +48,29 @@
 }
 
 @utility choice-switch {
-  @apply rounded-full f-align;
+  @apply relative rounded-full f-align;
 
   width: calc(var(--choice-size) * 2) !important;
 
   &[data-state="true"] {
-    @apply justify-end bg-background-thick;
+    @apply bg-background-thick;
 
-    &>.choice-switch-trigger {
+    & > .choice-switch-trigger {
       @apply bg-palette;
+
+      left: var(--choice-p);
     }
   }
 
-  &[data-state="false"]>.choice-switch-trigger {
+  &[data-state="false"] > .choice-switch-trigger {
     @apply bg-background-thick;
-  }
 
-  &:active>.choice-switch-trigger {
-    width: var(--choice-size);
+    left: calc(var(--choice-size) + var(--choice-p) / 2);
   }
 }
 
 @utility choice-switch-trigger {
-  @apply bg-palette rounded-full transition-all f-center text-brush;
+  @apply absolute bg-palette rounded-full transition-all f-center text-brush;
 
   width: calc(var(--choice-size) - var(--choice-p) * 2);
   height: calc(var(--choice-size) - var(--choice-p) * 2);
