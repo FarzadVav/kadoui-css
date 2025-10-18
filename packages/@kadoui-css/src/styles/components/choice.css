@@ -58,19 +58,19 @@
     & > .choice-switch-trigger {
       @apply bg-palette;
 
-      left: var(--choice-p);
+      left: calc(var(--choice-size) + var(--choice-p) / 2);
     }
   }
-
+  
   &[data-state="false"] > .choice-switch-trigger {
     @apply bg-background-thick;
-
-    left: calc(var(--choice-size) + var(--choice-p) / 2);
+    
+    left: var(--choice-p);
   }
 }
 
 @utility choice-switch-trigger {
-  @apply absolute bg-palette rounded-full transition-all f-center text-brush;
+  @apply absolute bg-palette rounded-full transition-all f-center text-brush duration-300;
 
   width: calc(var(--choice-size) - var(--choice-p) * 2);
   height: calc(var(--choice-size) - var(--choice-p) * 2);
